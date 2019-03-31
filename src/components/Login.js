@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import soccer from '../Soccerball.svg';
 import { InputEl, ButtonEl } from './FormElement';
 import UserContext from '../context/UserContext';
+import Home from './Home';
 
 class Login extends Component {
     render() {
@@ -17,7 +18,7 @@ class Login extends Component {
                                         <ButtonEl elvalue="Go" eltype="submit"/>
                                     </form>
                                 </div>
-                                :<h1>Welcome {context.username}!</h1>
+                                :<Home />
                             }
                             
                         </div>
