@@ -74,6 +74,10 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+ul {
+  list-style: none;
+  text-align: left
+}
 /* BAO Common Styles end here */
 /* Login Comp Styles */
 .bao-container {
@@ -87,3 +91,22 @@ button {
   width: 40%;
 }
 /* Login Comp Styles end here*/
+/* Home COmponent styles */
+.bao-live {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bao-live .live-detail {
+  
+}
+.bao-live ul, .bao-live .live-detail{
+  border-radius: 5px;
+  border:2px solid #4285f4;
+  padding:10px;
+  margin:0 10px 0 0;
+  font-size: 1.8vmin;
+  width: 100vw;
+}
+/* Home COmponent styles end here */
