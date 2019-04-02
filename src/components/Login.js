@@ -4,7 +4,8 @@ import { InputEl, ButtonEl } from './FormElement';
 import UserContext from '../context/UserContext';
 import Home from './Home';
 
-class Login extends Component {
+class Login extends Component {   
+
     render() {
             return (
                 <UserContext.Consumer>
