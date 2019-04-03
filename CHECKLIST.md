@@ -12,3 +12,11 @@ The primary market should also result in the odds showing for any outcomes linke
 - Any instructions required to run your solution and tests in a Linux environment.
 - change px to 
 - change key indx to valid id
+- change messagetypes constant name
+
+
+## REFERENCES
+
+- https://medium.com/@ianovenden/redux-websocket-integration-c1a0d22d3189
+- https://medium.freecodecamp.org/how-to-build-a-chat-application-using-react-redux-redux-saga-and-web-sockets-47423e4bc21a
+- https://blogs.sap.com/2019/02/25/ui5-web-components-react-redux-socket.io/

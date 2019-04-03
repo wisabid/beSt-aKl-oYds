@@ -3,6 +3,7 @@ import soccer from '../Soccerball.svg';
 import { InputEl, ButtonEl } from './FormElement';
 import UserContext from '../context/UserContext';
 import Home from './Home';
+import { connect } from 'react-redux';
 
 class Login extends Component {   
 
@@ -11,6 +12,7 @@ class Login extends Component {
                 <UserContext.Consumer>
                     {context => (
                         <div className="bao-container" id={context.username}>
+                            
                             <img src={soccer} className="bao-logo" alt="logo" />
                             {!context.username
                                 ?<div className="bao-login">
@@ -19,7 +21,7 @@ class Login extends Component {
                                         <ButtonEl elvalue="Go" eltype="submit"/>
                                     </form>
                                 </div>
-                                :<Home />
+                                :<h4>hi{this.props.adduser(context.username) && this.props.users}</h4>
                             }
                             
                         </div>
@@ -28,5 +30,17 @@ class Login extends Component {
             )
     }
 }
+
+// const mapStateToProps = (state) => {
+//     return {
+//         users : state.rL.users
+//     }
+// }
+
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         adduser : (user) => dispatch({type: 'ADD_USER', user : user})
+//     }
+// }
 
 export default Login;

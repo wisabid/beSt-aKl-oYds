@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Login from './components/Login';
+import Login from './containers/Login';
 import UserContext from './context/UserContext';
 
 class App extends Component {  
