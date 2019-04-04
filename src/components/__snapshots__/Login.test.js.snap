@@ -90,11 +90,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -214,11 +209,6 @@ ReactWrapper {
                   class="bao-container"
                   id=""
                 >
-                  <img
-                    alt="logo"
-                    class="bao-logo"
-                    src="Soccerball.svg"
-                  />
                   <div
                     class="bao-login"
                   >
@@ -335,11 +325,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -459,11 +444,6 @@ ReactWrapper {
                   class="bao-container"
                   id=""
                 >
-                  <img
-                    alt="logo"
-                    class="bao-logo"
-                    src="Soccerball.svg"
-                  />
                   <div
                     class="bao-login"
                   >
@@ -572,7 +552,7 @@ ReactWrapper {
           "_debugOwner": [Circular],
           "_debugSource": Object {
             "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-            "lineNumber": 11,
+            "lineNumber": 12,
           },
           "actualDuration": 0,
           "actualStartTime": -1,
@@ -584,7 +564,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-              "lineNumber": 13,
+              "lineNumber": 14,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -596,45 +576,19 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                "lineNumber": 14,
+                "lineNumber": 18,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
               "alternate": null,
-              "child": null,
-              "childExpirationTime": 0,
-              "contextDependencies": null,
-              "effectTag": 0,
-              "elementType": "img",
-              "expirationTime": 0,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": Object {
-                "alt": "logo",
-                "className": "bao-logo",
-                "src": "Soccerball.svg",
-              },
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": Object {
-                "alt": "logo",
-                "className": "bao-logo",
-                "src": "Soccerball.svg",
-              },
-              "ref": null,
-              "return": [Circular],
-              "selfBaseDuration": 0,
-              "sibling": FiberNode {
+              "child": FiberNode {
                 "_debugHookTypes": null,
                 "_debugID": 63,
                 "_debugIsCurrentlyTiming": false,
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                  "lineNumber": 16,
+                  "lineNumber": 19,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
@@ -646,19 +600,19 @@ ReactWrapper {
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
                     "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                    "lineNumber": 17,
+                    "lineNumber": 20,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
                   "alternate": null,
                   "child": FiberNode {
                     "_debugHookTypes": null,
-                    "_debugID": 65,
+                    "_debugID": 66,
                     "_debugIsCurrentlyTiming": false,
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
-                      "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                      "lineNumber": 18,
+                      "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
+                      "lineNumber": 5,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
@@ -670,19 +624,41 @@ ReactWrapper {
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
                         "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                        "lineNumber": 5,
+                        "lineNumber": 6,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
                       "alternate": null,
-                      "child": FiberNode {
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "contextDependencies": null,
+                      "effectTag": 0,
+                      "elementType": "legend",
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Name",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "Name",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
                         "_debugHookTypes": null,
                         "_debugID": 68,
                         "_debugIsCurrentlyTiming": false,
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                          "lineNumber": 6,
+                          "lineNumber": 7,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
@@ -691,140 +667,194 @@ ReactWrapper {
                         "childExpirationTime": 0,
                         "contextDependencies": null,
                         "effectTag": 0,
-                        "elementType": "legend",
+                        "elementType": "input",
                         "expirationTime": 0,
                         "firstEffect": null,
-                        "index": 0,
+                        "index": 1,
                         "key": null,
                         "lastEffect": null,
                         "memoizedProps": Object {
-                          "children": "Name",
+                          "autoComplete": "off",
+                          "id": "username",
+                          "placeholder": "Enter your Name",
+                          "type": "text",
                         },
                         "memoizedState": null,
                         "mode": 0,
                         "nextEffect": null,
                         "pendingProps": Object {
-                          "children": "Name",
+                          "autoComplete": "off",
+                          "id": "username",
+                          "placeholder": "Enter your Name",
+                          "type": "text",
                         },
                         "ref": null,
                         "return": [Circular],
                         "selfBaseDuration": 0,
-                        "sibling": FiberNode {
-                          "_debugHookTypes": null,
-                          "_debugID": 69,
-                          "_debugIsCurrentlyTiming": false,
-                          "_debugOwner": [Circular],
-                          "_debugSource": Object {
-                            "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                            "lineNumber": 7,
-                          },
-                          "actualDuration": 0,
-                          "actualStartTime": -1,
-                          "alternate": null,
-                          "child": null,
-                          "childExpirationTime": 0,
-                          "contextDependencies": null,
-                          "effectTag": 0,
-                          "elementType": "input",
-                          "expirationTime": 0,
-                          "firstEffect": null,
-                          "index": 1,
-                          "key": null,
-                          "lastEffect": null,
-                          "memoizedProps": Object {
-                            "autoComplete": "off",
-                            "id": "username",
-                            "placeholder": "Enter your Name",
-                            "type": "text",
-                          },
-                          "memoizedState": null,
-                          "mode": 0,
-                          "nextEffect": null,
-                          "pendingProps": Object {
-                            "autoComplete": "off",
-                            "id": "username",
-                            "placeholder": "Enter your Name",
-                            "type": "text",
-                          },
-                          "ref": null,
-                          "return": [Circular],
-                          "selfBaseDuration": 0,
-                          "sibling": null,
-                          "stateNode": <input
-                            autocomplete="off"
-                            id="username"
-                            placeholder="Enter your Name"
-                            type="text"
-                          />,
-                          "tag": 5,
-                          "treeBaseDuration": 0,
-                          "type": "input",
-                          "updateQueue": null,
-                        },
-                        "stateNode": <legend>
-                          Name
-                        </legend>,
+                        "sibling": null,
+                        "stateNode": <input
+                          autocomplete="off"
+                          id="username"
+                          placeholder="Enter your Name"
+                          type="text"
+                        />,
                         "tag": 5,
                         "treeBaseDuration": 0,
-                        "type": "legend",
+                        "type": "input",
                         "updateQueue": null,
                       },
+                      "stateNode": <legend>
+                        Name
+                      </legend>,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "legend",
+                      "updateQueue": null,
+                    },
+                    "childExpirationTime": 0,
+                    "contextDependencies": null,
+                    "effectTag": 0,
+                    "elementType": "fieldset",
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": Array [
+                        <legend>
+                          Name
+                        </legend>,
+                        <input
+                          autoComplete="off"
+                          id="username"
+                          placeholder="Enter your Name"
+                          type="text"
+                        />,
+                      ],
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": Array [
+                        <legend>
+                          Name
+                        </legend>,
+                        <input
+                          autoComplete="off"
+                          id="username"
+                          placeholder="Enter your Name"
+                          type="text"
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": <fieldset>
+                      <legend>
+                        Name
+                      </legend>
+                      <input
+                        autocomplete="off"
+                        id="username"
+                        placeholder="Enter your Name"
+                        type="text"
+                      />
+                    </fieldset>,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "fieldset",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "contextDependencies": null,
+                  "effectTag": 1,
+                  "elementType": [Function],
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "elname": "username",
+                    "elplaceholder": "Enter your Name",
+                    "eltype": "text",
+                    "legend": "Name",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "elname": "username",
+                    "elplaceholder": "Enter your Name",
+                    "eltype": "text",
+                    "legend": "Name",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugHookTypes": null,
+                    "_debugID": 65,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": Object {
+                      "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
+                      "lineNumber": 21,
+                    },
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugHookTypes": null,
+                      "_debugID": 69,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
+                        "lineNumber": 14,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
                       "childExpirationTime": 0,
                       "contextDependencies": null,
                       "effectTag": 0,
-                      "elementType": "fieldset",
+                      "elementType": "button",
                       "expirationTime": 0,
                       "firstEffect": null,
                       "index": 0,
                       "key": null,
                       "lastEffect": null,
                       "memoizedProps": Object {
-                        "children": Array [
-                          <legend>
-                            Name
-                          </legend>,
-                          <input
-                            autoComplete="off"
-                            id="username"
-                            placeholder="Enter your Name"
-                            type="text"
-                          />,
-                        ],
+                        "children": "Go",
+                        "onClick": undefined,
+                        "type": "submit",
                       },
                       "memoizedState": null,
                       "mode": 0,
                       "nextEffect": null,
                       "pendingProps": Object {
-                        "children": Array [
-                          <legend>
-                            Name
-                          </legend>,
-                          <input
-                            autoComplete="off"
-                            id="username"
-                            placeholder="Enter your Name"
-                            type="text"
-                          />,
-                        ],
+                        "children": "Go",
+                        "onClick": undefined,
+                        "type": "submit",
                       },
                       "ref": null,
                       "return": [Circular],
                       "selfBaseDuration": 0,
                       "sibling": null,
-                      "stateNode": <fieldset>
-                        <legend>
-                          Name
-                        </legend>
-                        <input
-                          autocomplete="off"
-                          id="username"
-                          placeholder="Enter your Name"
-                          type="text"
-                        />
-                      </fieldset>,
+                      "stateNode": <button
+                        type="submit"
+                      >
+                        Go
+                      </button>,
                       "tag": 5,
                       "treeBaseDuration": 0,
-                      "type": "fieldset",
+                      "type": "button",
                       "updateQueue": null,
                     },
                     "childExpirationTime": 0,
@@ -833,274 +863,176 @@ ReactWrapper {
                     "elementType": [Function],
                     "expirationTime": 0,
                     "firstEffect": null,
-                    "index": 0,
+                    "index": 1,
                     "key": null,
                     "lastEffect": null,
                     "memoizedProps": Object {
-                      "elname": "username",
-                      "elplaceholder": "Enter your Name",
-                      "eltype": "text",
-                      "legend": "Name",
+                      "eltype": "submit",
+                      "elvalue": "Go",
                     },
                     "memoizedState": null,
                     "mode": 0,
                     "nextEffect": null,
                     "pendingProps": Object {
-                      "elname": "username",
-                      "elplaceholder": "Enter your Name",
-                      "eltype": "text",
-                      "legend": "Name",
+                      "eltype": "submit",
+                      "elvalue": "Go",
                     },
                     "ref": null,
                     "return": [Circular],
                     "selfBaseDuration": 0,
-                    "sibling": FiberNode {
-                      "_debugHookTypes": null,
-                      "_debugID": 66,
-                      "_debugIsCurrentlyTiming": false,
-                      "_debugOwner": [Circular],
-                      "_debugSource": Object {
-                        "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                        "lineNumber": 19,
-                      },
-                      "actualDuration": 0,
-                      "actualStartTime": -1,
-                      "alternate": null,
-                      "child": FiberNode {
-                        "_debugHookTypes": null,
-                        "_debugID": 70,
-                        "_debugIsCurrentlyTiming": false,
-                        "_debugOwner": [Circular],
-                        "_debugSource": Object {
-                          "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                          "lineNumber": 14,
-                        },
-                        "actualDuration": 0,
-                        "actualStartTime": -1,
-                        "alternate": null,
-                        "child": null,
-                        "childExpirationTime": 0,
-                        "contextDependencies": null,
-                        "effectTag": 0,
-                        "elementType": "button",
-                        "expirationTime": 0,
-                        "firstEffect": null,
-                        "index": 0,
-                        "key": null,
-                        "lastEffect": null,
-                        "memoizedProps": Object {
-                          "children": "Go",
-                          "onClick": undefined,
-                          "type": "submit",
-                        },
-                        "memoizedState": null,
-                        "mode": 0,
-                        "nextEffect": null,
-                        "pendingProps": Object {
-                          "children": "Go",
-                          "onClick": undefined,
-                          "type": "submit",
-                        },
-                        "ref": null,
-                        "return": [Circular],
-                        "selfBaseDuration": 0,
-                        "sibling": null,
-                        "stateNode": <button
-                          type="submit"
-                        >
-                          Go
-                        </button>,
-                        "tag": 5,
-                        "treeBaseDuration": 0,
-                        "type": "button",
-                        "updateQueue": null,
-                      },
-                      "childExpirationTime": 0,
-                      "contextDependencies": null,
-                      "effectTag": 1,
-                      "elementType": [Function],
-                      "expirationTime": 0,
-                      "firstEffect": null,
-                      "index": 1,
-                      "key": null,
-                      "lastEffect": null,
-                      "memoizedProps": Object {
-                        "eltype": "submit",
-                        "elvalue": "Go",
-                      },
-                      "memoizedState": null,
-                      "mode": 0,
-                      "nextEffect": null,
-                      "pendingProps": Object {
-                        "eltype": "submit",
-                        "elvalue": "Go",
-                      },
-                      "ref": null,
-                      "return": [Circular],
-                      "selfBaseDuration": 0,
-                      "sibling": null,
-                      "stateNode": null,
-                      "tag": 0,
-                      "treeBaseDuration": 0,
-                      "type": [Function],
-                      "updateQueue": null,
-                    },
+                    "sibling": null,
                     "stateNode": null,
                     "tag": 0,
                     "treeBaseDuration": 0,
                     "type": [Function],
                     "updateQueue": null,
                   },
-                  "childExpirationTime": 0,
-                  "contextDependencies": null,
-                  "effectTag": 0,
-                  "elementType": "form",
-                  "expirationTime": 0,
-                  "firstEffect": null,
-                  "index": 0,
-                  "key": null,
-                  "lastEffect": null,
-                  "memoizedProps": Object {
-                    "children": Array [
-                      <InputEl
-                        elname="username"
-                        elplaceholder="Enter your Name"
-                        eltype="text"
-                        legend="Name"
-                      />,
-                      <ButtonEl
-                        eltype="submit"
-                        elvalue="Go"
-                      />,
-                    ],
-                    "onSubmit": undefined,
-                  },
-                  "memoizedState": null,
-                  "mode": 0,
-                  "nextEffect": null,
-                  "pendingProps": Object {
-                    "children": Array [
-                      <InputEl
-                        elname="username"
-                        elplaceholder="Enter your Name"
-                        eltype="text"
-                        legend="Name"
-                      />,
-                      <ButtonEl
-                        eltype="submit"
-                        elvalue="Go"
-                      />,
-                    ],
-                    "onSubmit": undefined,
-                  },
-                  "ref": null,
-                  "return": [Circular],
-                  "selfBaseDuration": 0,
-                  "sibling": null,
-                  "stateNode": <form>
-                    <fieldset>
-                      <legend>
-                        Name
-                      </legend>
-                      <input
-                        autocomplete="off"
-                        id="username"
-                        placeholder="Enter your Name"
-                        type="text"
-                      />
-                    </fieldset>
-                    <button
-                      type="submit"
-                    >
-                      Go
-                    </button>
-                  </form>,
-                  "tag": 5,
+                  "stateNode": null,
+                  "tag": 0,
                   "treeBaseDuration": 0,
-                  "type": "form",
+                  "type": [Function],
                   "updateQueue": null,
                 },
                 "childExpirationTime": 0,
                 "contextDependencies": null,
                 "effectTag": 0,
-                "elementType": "div",
+                "elementType": "form",
                 "expirationTime": 0,
                 "firstEffect": null,
-                "index": 1,
+                "index": 0,
                 "key": null,
                 "lastEffect": null,
                 "memoizedProps": Object {
-                  "children": <form>
+                  "children": Array [
                     <InputEl
                       elname="username"
                       elplaceholder="Enter your Name"
                       eltype="text"
                       legend="Name"
-                    />
+                    />,
                     <ButtonEl
                       eltype="submit"
                       elvalue="Go"
-                    />
-                  </form>,
-                  "className": "bao-login",
+                    />,
+                  ],
+                  "onSubmit": undefined,
                 },
                 "memoizedState": null,
                 "mode": 0,
                 "nextEffect": null,
                 "pendingProps": Object {
-                  "children": <form>
+                  "children": Array [
                     <InputEl
                       elname="username"
                       elplaceholder="Enter your Name"
                       eltype="text"
                       legend="Name"
-                    />
+                    />,
                     <ButtonEl
                       eltype="submit"
                       elvalue="Go"
-                    />
-                  </form>,
-                  "className": "bao-login",
+                    />,
+                  ],
+                  "onSubmit": undefined,
                 },
                 "ref": null,
                 "return": [Circular],
                 "selfBaseDuration": 0,
                 "sibling": null,
-                "stateNode": <div
-                  class="bao-login"
-                >
-                  <form>
-                    <fieldset>
-                      <legend>
-                        Name
-                      </legend>
-                      <input
-                        autocomplete="off"
-                        id="username"
-                        placeholder="Enter your Name"
-                        type="text"
-                      />
-                    </fieldset>
-                    <button
-                      type="submit"
-                    >
-                      Go
-                    </button>
-                  </form>
-                </div>,
+                "stateNode": <form>
+                  <fieldset>
+                    <legend>
+                      Name
+                    </legend>
+                    <input
+                      autocomplete="off"
+                      id="username"
+                      placeholder="Enter your Name"
+                      type="text"
+                    />
+                  </fieldset>
+                  <button
+                    type="submit"
+                  >
+                    Go
+                  </button>
+                </form>,
                 "tag": 5,
                 "treeBaseDuration": 0,
-                "type": "div",
+                "type": "form",
                 "updateQueue": null,
               },
-              "stateNode": <img
-                alt="logo"
-                class="bao-logo"
-                src="Soccerball.svg"
-              />,
+              "childExpirationTime": 0,
+              "contextDependencies": null,
+              "effectTag": 0,
+              "elementType": "div",
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <form>
+                  <InputEl
+                    elname="username"
+                    elplaceholder="Enter your Name"
+                    eltype="text"
+                    legend="Name"
+                  />
+                  <ButtonEl
+                    eltype="submit"
+                    elvalue="Go"
+                  />
+                </form>,
+                "className": "bao-login",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": <form>
+                  <InputEl
+                    elname="username"
+                    elplaceholder="Enter your Name"
+                    eltype="text"
+                    legend="Name"
+                  />
+                  <ButtonEl
+                    eltype="submit"
+                    elvalue="Go"
+                  />
+                </form>,
+                "className": "bao-login",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <div
+                class="bao-login"
+              >
+                <form>
+                  <fieldset>
+                    <legend>
+                      Name
+                    </legend>
+                    <input
+                      autocomplete="off"
+                      id="username"
+                      placeholder="Enter your Name"
+                      type="text"
+                    />
+                  </fieldset>
+                  <button
+                    type="submit"
+                  >
+                    Go
+                  </button>
+                </form>
+              </div>,
               "tag": 5,
               "treeBaseDuration": 0,
-              "type": "img",
+              "type": "div",
               "updateQueue": null,
             },
             "childExpirationTime": 0,
@@ -1113,29 +1045,22 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": Array [
-                <img
-                  alt="logo"
-                  className="bao-logo"
-                  src="Soccerball.svg"
-                />,
-                <div
-                  className="bao-login"
-                >
-                  <form>
-                    <InputEl
-                      elname="username"
-                      elplaceholder="Enter your Name"
-                      eltype="text"
-                      legend="Name"
-                    />
-                    <ButtonEl
-                      eltype="submit"
-                      elvalue="Go"
-                    />
-                  </form>
-                </div>,
-              ],
+              "children": <div
+                className="bao-login"
+              >
+                <form>
+                  <InputEl
+                    elname="username"
+                    elplaceholder="Enter your Name"
+                    eltype="text"
+                    legend="Name"
+                  />
+                  <ButtonEl
+                    eltype="submit"
+                    elvalue="Go"
+                  />
+                </form>
+              </div>,
               "className": "bao-container",
               "id": "",
             },
@@ -1143,29 +1068,22 @@ ReactWrapper {
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": Array [
-                <img
-                  alt="logo"
-                  className="bao-logo"
-                  src="Soccerball.svg"
-                />,
-                <div
-                  className="bao-login"
-                >
-                  <form>
-                    <InputEl
-                      elname="username"
-                      elplaceholder="Enter your Name"
-                      eltype="text"
-                      legend="Name"
-                    />
-                    <ButtonEl
-                      eltype="submit"
-                      elvalue="Go"
-                    />
-                  </form>
-                </div>,
-              ],
+              "children": <div
+                className="bao-login"
+              >
+                <form>
+                  <InputEl
+                    elname="username"
+                    elplaceholder="Enter your Name"
+                    eltype="text"
+                    legend="Name"
+                  />
+                  <ButtonEl
+                    eltype="submit"
+                    elvalue="Go"
+                  />
+                </form>
+              </div>,
               "className": "bao-container",
               "id": "",
             },
@@ -1177,11 +1095,6 @@ ReactWrapper {
               class="bao-container"
               id=""
             >
-              <img
-                alt="logo"
-                class="bao-logo"
-                src="Soccerball.svg"
-              />
               <div
                 class="bao-login"
               >
@@ -1325,11 +1238,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -1449,11 +1357,6 @@ ReactWrapper {
                   class="bao-container"
                   id=""
                 >
-                  <img
-                    alt="logo"
-                    class="bao-logo"
-                    src="Soccerball.svg"
-                  />
                   <div
                     class="bao-login"
                   >
@@ -1570,11 +1473,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -1694,11 +1592,6 @@ ReactWrapper {
                   class="bao-container"
                   id=""
                 >
-                  <img
-                    alt="logo"
-                    class="bao-logo"
-                    src="Soccerball.svg"
-                  />
                   <div
                     class="bao-login"
                   >
@@ -1833,11 +1726,6 @@ ReactWrapper {
           class="bao-container"
           id=""
         >
-          <img
-            alt="logo"
-            class="bao-logo"
-            src="Soccerball.svg"
-          />
           <div
             class="bao-login"
           >
@@ -1864,53 +1752,27 @@ ReactWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <img
-              alt="logo"
-              className="bao-logo"
-              src="Soccerball.svg"
-            />,
-            <div
-              className="bao-login"
-            >
-              <form>
-                <InputEl
-                  elname="username"
-                  elplaceholder="Enter your Name"
-                  eltype="text"
-                  legend="Name"
-                />
-                <ButtonEl
-                  eltype="submit"
-                  elvalue="Go"
-                />
-              </form>
-            </div>,
-          ],
+          "children": <div
+            className="bao-login"
+          >
+            <form>
+              <InputEl
+                elname="username"
+                elplaceholder="Enter your Name"
+                eltype="text"
+                legend="Name"
+              />
+              <ButtonEl
+                eltype="submit"
+                elvalue="Go"
+              />
+            </form>
+          </div>,
           "className": "bao-container",
           "id": "",
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": <img
-              alt="logo"
-              class="bao-logo"
-              src="Soccerball.svg"
-            />,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "logo",
-              "className": "bao-logo",
-              "src": "Soccerball.svg",
-            },
-            "ref": null,
-            "rendered": Array [
-              undefined,
-            ],
-            "type": "img",
-          },
           Object {
             "instance": <div
               class="bao-login"
@@ -2194,11 +2056,6 @@ ReactWrapper {
                       class="bao-container"
                       id=""
                     >
-                      <img
-                        alt="logo"
-                        class="bao-logo"
-                        src="Soccerball.svg"
-                      />
                       <div
                         class="bao-login"
                       >
@@ -2318,11 +2175,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -2439,11 +2291,6 @@ ReactWrapper {
                       class="bao-container"
                       id=""
                     >
-                      <img
-                        alt="logo"
-                        class="bao-logo"
-                        src="Soccerball.svg"
-                      />
                       <div
                         class="bao-login"
                       >
@@ -2563,11 +2410,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -2676,7 +2518,7 @@ ReactWrapper {
             "_debugOwner": [Circular],
             "_debugSource": Object {
               "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-              "lineNumber": 11,
+              "lineNumber": 12,
             },
             "actualDuration": 0,
             "actualStartTime": -1,
@@ -2688,7 +2530,7 @@ ReactWrapper {
               "_debugOwner": [Circular],
               "_debugSource": Object {
                 "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                "lineNumber": 13,
+                "lineNumber": 14,
               },
               "actualDuration": 0,
               "actualStartTime": -1,
@@ -2700,45 +2542,19 @@ ReactWrapper {
                 "_debugOwner": [Circular],
                 "_debugSource": Object {
                   "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                  "lineNumber": 14,
+                  "lineNumber": 18,
                 },
                 "actualDuration": 0,
                 "actualStartTime": -1,
                 "alternate": null,
-                "child": null,
-                "childExpirationTime": 0,
-                "contextDependencies": null,
-                "effectTag": 0,
-                "elementType": "img",
-                "expirationTime": 0,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {
-                  "alt": "logo",
-                  "className": "bao-logo",
-                  "src": "Soccerball.svg",
-                },
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {
-                  "alt": "logo",
-                  "className": "bao-logo",
-                  "src": "Soccerball.svg",
-                },
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": FiberNode {
+                "child": FiberNode {
                   "_debugHookTypes": null,
                   "_debugID": 63,
                   "_debugIsCurrentlyTiming": false,
                   "_debugOwner": [Circular],
                   "_debugSource": Object {
                     "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                    "lineNumber": 16,
+                    "lineNumber": 19,
                   },
                   "actualDuration": 0,
                   "actualStartTime": -1,
@@ -2750,19 +2566,19 @@ ReactWrapper {
                     "_debugOwner": [Circular],
                     "_debugSource": Object {
                       "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                      "lineNumber": 17,
+                      "lineNumber": 20,
                     },
                     "actualDuration": 0,
                     "actualStartTime": -1,
                     "alternate": null,
                     "child": FiberNode {
                       "_debugHookTypes": null,
-                      "_debugID": 65,
+                      "_debugID": 66,
                       "_debugIsCurrentlyTiming": false,
                       "_debugOwner": [Circular],
                       "_debugSource": Object {
-                        "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                        "lineNumber": 18,
+                        "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
+                        "lineNumber": 5,
                       },
                       "actualDuration": 0,
                       "actualStartTime": -1,
@@ -2774,19 +2590,41 @@ ReactWrapper {
                         "_debugOwner": [Circular],
                         "_debugSource": Object {
                           "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                          "lineNumber": 5,
+                          "lineNumber": 6,
                         },
                         "actualDuration": 0,
                         "actualStartTime": -1,
                         "alternate": null,
-                        "child": FiberNode {
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "contextDependencies": null,
+                        "effectTag": 0,
+                        "elementType": "legend",
+                        "expirationTime": 0,
+                        "firstEffect": null,
+                        "index": 0,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "children": "Name",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "children": "Name",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
                           "_debugHookTypes": null,
                           "_debugID": 68,
                           "_debugIsCurrentlyTiming": false,
                           "_debugOwner": [Circular],
                           "_debugSource": Object {
                             "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                            "lineNumber": 6,
+                            "lineNumber": 7,
                           },
                           "actualDuration": 0,
                           "actualStartTime": -1,
@@ -2795,140 +2633,194 @@ ReactWrapper {
                           "childExpirationTime": 0,
                           "contextDependencies": null,
                           "effectTag": 0,
-                          "elementType": "legend",
+                          "elementType": "input",
                           "expirationTime": 0,
                           "firstEffect": null,
-                          "index": 0,
+                          "index": 1,
                           "key": null,
                           "lastEffect": null,
                           "memoizedProps": Object {
-                            "children": "Name",
+                            "autoComplete": "off",
+                            "id": "username",
+                            "placeholder": "Enter your Name",
+                            "type": "text",
                           },
                           "memoizedState": null,
                           "mode": 0,
                           "nextEffect": null,
                           "pendingProps": Object {
-                            "children": "Name",
+                            "autoComplete": "off",
+                            "id": "username",
+                            "placeholder": "Enter your Name",
+                            "type": "text",
                           },
                           "ref": null,
                           "return": [Circular],
                           "selfBaseDuration": 0,
-                          "sibling": FiberNode {
-                            "_debugHookTypes": null,
-                            "_debugID": 69,
-                            "_debugIsCurrentlyTiming": false,
-                            "_debugOwner": [Circular],
-                            "_debugSource": Object {
-                              "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                              "lineNumber": 7,
-                            },
-                            "actualDuration": 0,
-                            "actualStartTime": -1,
-                            "alternate": null,
-                            "child": null,
-                            "childExpirationTime": 0,
-                            "contextDependencies": null,
-                            "effectTag": 0,
-                            "elementType": "input",
-                            "expirationTime": 0,
-                            "firstEffect": null,
-                            "index": 1,
-                            "key": null,
-                            "lastEffect": null,
-                            "memoizedProps": Object {
-                              "autoComplete": "off",
-                              "id": "username",
-                              "placeholder": "Enter your Name",
-                              "type": "text",
-                            },
-                            "memoizedState": null,
-                            "mode": 0,
-                            "nextEffect": null,
-                            "pendingProps": Object {
-                              "autoComplete": "off",
-                              "id": "username",
-                              "placeholder": "Enter your Name",
-                              "type": "text",
-                            },
-                            "ref": null,
-                            "return": [Circular],
-                            "selfBaseDuration": 0,
-                            "sibling": null,
-                            "stateNode": <input
-                              autocomplete="off"
-                              id="username"
-                              placeholder="Enter your Name"
-                              type="text"
-                            />,
-                            "tag": 5,
-                            "treeBaseDuration": 0,
-                            "type": "input",
-                            "updateQueue": null,
-                          },
-                          "stateNode": <legend>
-                            Name
-                          </legend>,
+                          "sibling": null,
+                          "stateNode": <input
+                            autocomplete="off"
+                            id="username"
+                            placeholder="Enter your Name"
+                            type="text"
+                          />,
                           "tag": 5,
                           "treeBaseDuration": 0,
-                          "type": "legend",
+                          "type": "input",
                           "updateQueue": null,
                         },
+                        "stateNode": <legend>
+                          Name
+                        </legend>,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "legend",
+                        "updateQueue": null,
+                      },
+                      "childExpirationTime": 0,
+                      "contextDependencies": null,
+                      "effectTag": 0,
+                      "elementType": "fieldset",
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": Array [
+                          <legend>
+                            Name
+                          </legend>,
+                          <input
+                            autoComplete="off"
+                            id="username"
+                            placeholder="Enter your Name"
+                            type="text"
+                          />,
+                        ],
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": Array [
+                          <legend>
+                            Name
+                          </legend>,
+                          <input
+                            autoComplete="off"
+                            id="username"
+                            placeholder="Enter your Name"
+                            type="text"
+                          />,
+                        ],
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": <fieldset>
+                        <legend>
+                          Name
+                        </legend>
+                        <input
+                          autocomplete="off"
+                          id="username"
+                          placeholder="Enter your Name"
+                          type="text"
+                        />
+                      </fieldset>,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "fieldset",
+                      "updateQueue": null,
+                    },
+                    "childExpirationTime": 0,
+                    "contextDependencies": null,
+                    "effectTag": 1,
+                    "elementType": [Function],
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "elname": "username",
+                      "elplaceholder": "Enter your Name",
+                      "eltype": "text",
+                      "legend": "Name",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "elname": "username",
+                      "elplaceholder": "Enter your Name",
+                      "eltype": "text",
+                      "legend": "Name",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugHookTypes": null,
+                      "_debugID": 65,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": Object {
+                        "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
+                        "lineNumber": 21,
+                      },
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": FiberNode {
+                        "_debugHookTypes": null,
+                        "_debugID": 69,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": Object {
+                          "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
+                          "lineNumber": 14,
+                        },
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
                         "childExpirationTime": 0,
                         "contextDependencies": null,
                         "effectTag": 0,
-                        "elementType": "fieldset",
+                        "elementType": "button",
                         "expirationTime": 0,
                         "firstEffect": null,
                         "index": 0,
                         "key": null,
                         "lastEffect": null,
                         "memoizedProps": Object {
-                          "children": Array [
-                            <legend>
-                              Name
-                            </legend>,
-                            <input
-                              autoComplete="off"
-                              id="username"
-                              placeholder="Enter your Name"
-                              type="text"
-                            />,
-                          ],
+                          "children": "Go",
+                          "onClick": undefined,
+                          "type": "submit",
                         },
                         "memoizedState": null,
                         "mode": 0,
                         "nextEffect": null,
                         "pendingProps": Object {
-                          "children": Array [
-                            <legend>
-                              Name
-                            </legend>,
-                            <input
-                              autoComplete="off"
-                              id="username"
-                              placeholder="Enter your Name"
-                              type="text"
-                            />,
-                          ],
+                          "children": "Go",
+                          "onClick": undefined,
+                          "type": "submit",
                         },
                         "ref": null,
                         "return": [Circular],
                         "selfBaseDuration": 0,
                         "sibling": null,
-                        "stateNode": <fieldset>
-                          <legend>
-                            Name
-                          </legend>
-                          <input
-                            autocomplete="off"
-                            id="username"
-                            placeholder="Enter your Name"
-                            type="text"
-                          />
-                        </fieldset>,
+                        "stateNode": <button
+                          type="submit"
+                        >
+                          Go
+                        </button>,
                         "tag": 5,
                         "treeBaseDuration": 0,
-                        "type": "fieldset",
+                        "type": "button",
                         "updateQueue": null,
                       },
                       "childExpirationTime": 0,
@@ -2937,274 +2829,176 @@ ReactWrapper {
                       "elementType": [Function],
                       "expirationTime": 0,
                       "firstEffect": null,
-                      "index": 0,
+                      "index": 1,
                       "key": null,
                       "lastEffect": null,
                       "memoizedProps": Object {
-                        "elname": "username",
-                        "elplaceholder": "Enter your Name",
-                        "eltype": "text",
-                        "legend": "Name",
+                        "eltype": "submit",
+                        "elvalue": "Go",
                       },
                       "memoizedState": null,
                       "mode": 0,
                       "nextEffect": null,
                       "pendingProps": Object {
-                        "elname": "username",
-                        "elplaceholder": "Enter your Name",
-                        "eltype": "text",
-                        "legend": "Name",
+                        "eltype": "submit",
+                        "elvalue": "Go",
                       },
                       "ref": null,
                       "return": [Circular],
                       "selfBaseDuration": 0,
-                      "sibling": FiberNode {
-                        "_debugHookTypes": null,
-                        "_debugID": 66,
-                        "_debugIsCurrentlyTiming": false,
-                        "_debugOwner": [Circular],
-                        "_debugSource": Object {
-                          "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\Login.js",
-                          "lineNumber": 19,
-                        },
-                        "actualDuration": 0,
-                        "actualStartTime": -1,
-                        "alternate": null,
-                        "child": FiberNode {
-                          "_debugHookTypes": null,
-                          "_debugID": 70,
-                          "_debugIsCurrentlyTiming": false,
-                          "_debugOwner": [Circular],
-                          "_debugSource": Object {
-                            "fileName": "C:\\\\ImOrange\\\\Personal\\\\jHunt\\\\best-akl-oyds\\\\src\\\\components\\\\FormElement.js",
-                            "lineNumber": 14,
-                          },
-                          "actualDuration": 0,
-                          "actualStartTime": -1,
-                          "alternate": null,
-                          "child": null,
-                          "childExpirationTime": 0,
-                          "contextDependencies": null,
-                          "effectTag": 0,
-                          "elementType": "button",
-                          "expirationTime": 0,
-                          "firstEffect": null,
-                          "index": 0,
-                          "key": null,
-                          "lastEffect": null,
-                          "memoizedProps": Object {
-                            "children": "Go",
-                            "onClick": undefined,
-                            "type": "submit",
-                          },
-                          "memoizedState": null,
-                          "mode": 0,
-                          "nextEffect": null,
-                          "pendingProps": Object {
-                            "children": "Go",
-                            "onClick": undefined,
-                            "type": "submit",
-                          },
-                          "ref": null,
-                          "return": [Circular],
-                          "selfBaseDuration": 0,
-                          "sibling": null,
-                          "stateNode": <button
-                            type="submit"
-                          >
-                            Go
-                          </button>,
-                          "tag": 5,
-                          "treeBaseDuration": 0,
-                          "type": "button",
-                          "updateQueue": null,
-                        },
-                        "childExpirationTime": 0,
-                        "contextDependencies": null,
-                        "effectTag": 1,
-                        "elementType": [Function],
-                        "expirationTime": 0,
-                        "firstEffect": null,
-                        "index": 1,
-                        "key": null,
-                        "lastEffect": null,
-                        "memoizedProps": Object {
-                          "eltype": "submit",
-                          "elvalue": "Go",
-                        },
-                        "memoizedState": null,
-                        "mode": 0,
-                        "nextEffect": null,
-                        "pendingProps": Object {
-                          "eltype": "submit",
-                          "elvalue": "Go",
-                        },
-                        "ref": null,
-                        "return": [Circular],
-                        "selfBaseDuration": 0,
-                        "sibling": null,
-                        "stateNode": null,
-                        "tag": 0,
-                        "treeBaseDuration": 0,
-                        "type": [Function],
-                        "updateQueue": null,
-                      },
+                      "sibling": null,
                       "stateNode": null,
                       "tag": 0,
                       "treeBaseDuration": 0,
                       "type": [Function],
                       "updateQueue": null,
                     },
-                    "childExpirationTime": 0,
-                    "contextDependencies": null,
-                    "effectTag": 0,
-                    "elementType": "form",
-                    "expirationTime": 0,
-                    "firstEffect": null,
-                    "index": 0,
-                    "key": null,
-                    "lastEffect": null,
-                    "memoizedProps": Object {
-                      "children": Array [
-                        <InputEl
-                          elname="username"
-                          elplaceholder="Enter your Name"
-                          eltype="text"
-                          legend="Name"
-                        />,
-                        <ButtonEl
-                          eltype="submit"
-                          elvalue="Go"
-                        />,
-                      ],
-                      "onSubmit": undefined,
-                    },
-                    "memoizedState": null,
-                    "mode": 0,
-                    "nextEffect": null,
-                    "pendingProps": Object {
-                      "children": Array [
-                        <InputEl
-                          elname="username"
-                          elplaceholder="Enter your Name"
-                          eltype="text"
-                          legend="Name"
-                        />,
-                        <ButtonEl
-                          eltype="submit"
-                          elvalue="Go"
-                        />,
-                      ],
-                      "onSubmit": undefined,
-                    },
-                    "ref": null,
-                    "return": [Circular],
-                    "selfBaseDuration": 0,
-                    "sibling": null,
-                    "stateNode": <form>
-                      <fieldset>
-                        <legend>
-                          Name
-                        </legend>
-                        <input
-                          autocomplete="off"
-                          id="username"
-                          placeholder="Enter your Name"
-                          type="text"
-                        />
-                      </fieldset>
-                      <button
-                        type="submit"
-                      >
-                        Go
-                      </button>
-                    </form>,
-                    "tag": 5,
+                    "stateNode": null,
+                    "tag": 0,
                     "treeBaseDuration": 0,
-                    "type": "form",
+                    "type": [Function],
                     "updateQueue": null,
                   },
                   "childExpirationTime": 0,
                   "contextDependencies": null,
                   "effectTag": 0,
-                  "elementType": "div",
+                  "elementType": "form",
                   "expirationTime": 0,
                   "firstEffect": null,
-                  "index": 1,
+                  "index": 0,
                   "key": null,
                   "lastEffect": null,
                   "memoizedProps": Object {
-                    "children": <form>
+                    "children": Array [
                       <InputEl
                         elname="username"
                         elplaceholder="Enter your Name"
                         eltype="text"
                         legend="Name"
-                      />
+                      />,
                       <ButtonEl
                         eltype="submit"
                         elvalue="Go"
-                      />
-                    </form>,
-                    "className": "bao-login",
+                      />,
+                    ],
+                    "onSubmit": undefined,
                   },
                   "memoizedState": null,
                   "mode": 0,
                   "nextEffect": null,
                   "pendingProps": Object {
-                    "children": <form>
+                    "children": Array [
                       <InputEl
                         elname="username"
                         elplaceholder="Enter your Name"
                         eltype="text"
                         legend="Name"
-                      />
+                      />,
                       <ButtonEl
                         eltype="submit"
                         elvalue="Go"
-                      />
-                    </form>,
-                    "className": "bao-login",
+                      />,
+                    ],
+                    "onSubmit": undefined,
                   },
                   "ref": null,
                   "return": [Circular],
                   "selfBaseDuration": 0,
                   "sibling": null,
-                  "stateNode": <div
-                    class="bao-login"
-                  >
-                    <form>
-                      <fieldset>
-                        <legend>
-                          Name
-                        </legend>
-                        <input
-                          autocomplete="off"
-                          id="username"
-                          placeholder="Enter your Name"
-                          type="text"
-                        />
-                      </fieldset>
-                      <button
-                        type="submit"
-                      >
-                        Go
-                      </button>
-                    </form>
-                  </div>,
+                  "stateNode": <form>
+                    <fieldset>
+                      <legend>
+                        Name
+                      </legend>
+                      <input
+                        autocomplete="off"
+                        id="username"
+                        placeholder="Enter your Name"
+                        type="text"
+                      />
+                    </fieldset>
+                    <button
+                      type="submit"
+                    >
+                      Go
+                    </button>
+                  </form>,
                   "tag": 5,
                   "treeBaseDuration": 0,
-                  "type": "div",
+                  "type": "form",
                   "updateQueue": null,
                 },
-                "stateNode": <img
-                  alt="logo"
-                  class="bao-logo"
-                  src="Soccerball.svg"
-                />,
+                "childExpirationTime": 0,
+                "contextDependencies": null,
+                "effectTag": 0,
+                "elementType": "div",
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": <form>
+                    <InputEl
+                      elname="username"
+                      elplaceholder="Enter your Name"
+                      eltype="text"
+                      legend="Name"
+                    />
+                    <ButtonEl
+                      eltype="submit"
+                      elvalue="Go"
+                    />
+                  </form>,
+                  "className": "bao-login",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": <form>
+                    <InputEl
+                      elname="username"
+                      elplaceholder="Enter your Name"
+                      eltype="text"
+                      legend="Name"
+                    />
+                    <ButtonEl
+                      eltype="submit"
+                      elvalue="Go"
+                    />
+                  </form>,
+                  "className": "bao-login",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <div
+                  class="bao-login"
+                >
+                  <form>
+                    <fieldset>
+                      <legend>
+                        Name
+                      </legend>
+                      <input
+                        autocomplete="off"
+                        id="username"
+                        placeholder="Enter your Name"
+                        type="text"
+                      />
+                    </fieldset>
+                    <button
+                      type="submit"
+                    >
+                      Go
+                    </button>
+                  </form>
+                </div>,
                 "tag": 5,
                 "treeBaseDuration": 0,
-                "type": "img",
+                "type": "div",
                 "updateQueue": null,
               },
               "childExpirationTime": 0,
@@ -3217,29 +3011,22 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": Array [
-                  <img
-                    alt="logo"
-                    className="bao-logo"
-                    src="Soccerball.svg"
-                  />,
-                  <div
-                    className="bao-login"
-                  >
-                    <form>
-                      <InputEl
-                        elname="username"
-                        elplaceholder="Enter your Name"
-                        eltype="text"
-                        legend="Name"
-                      />
-                      <ButtonEl
-                        eltype="submit"
-                        elvalue="Go"
-                      />
-                    </form>
-                  </div>,
-                ],
+                "children": <div
+                  className="bao-login"
+                >
+                  <form>
+                    <InputEl
+                      elname="username"
+                      elplaceholder="Enter your Name"
+                      eltype="text"
+                      legend="Name"
+                    />
+                    <ButtonEl
+                      eltype="submit"
+                      elvalue="Go"
+                    />
+                  </form>
+                </div>,
                 "className": "bao-container",
                 "id": "",
               },
@@ -3247,29 +3034,22 @@ ReactWrapper {
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": Array [
-                  <img
-                    alt="logo"
-                    className="bao-logo"
-                    src="Soccerball.svg"
-                  />,
-                  <div
-                    className="bao-login"
-                  >
-                    <form>
-                      <InputEl
-                        elname="username"
-                        elplaceholder="Enter your Name"
-                        eltype="text"
-                        legend="Name"
-                      />
-                      <ButtonEl
-                        eltype="submit"
-                        elvalue="Go"
-                      />
-                    </form>
-                  </div>,
-                ],
+                "children": <div
+                  className="bao-login"
+                >
+                  <form>
+                    <InputEl
+                      elname="username"
+                      elplaceholder="Enter your Name"
+                      eltype="text"
+                      legend="Name"
+                    />
+                    <ButtonEl
+                      eltype="submit"
+                      elvalue="Go"
+                    />
+                  </form>
+                </div>,
                 "className": "bao-container",
                 "id": "",
               },
@@ -3281,11 +3061,6 @@ ReactWrapper {
                 class="bao-container"
                 id=""
               >
-                <img
-                  alt="logo"
-                  class="bao-logo"
-                  src="Soccerball.svg"
-                />
                 <div
                   class="bao-login"
                 >
@@ -3429,11 +3204,6 @@ ReactWrapper {
                       class="bao-container"
                       id=""
                     >
-                      <img
-                        alt="logo"
-                        class="bao-logo"
-                        src="Soccerball.svg"
-                      />
                       <div
                         class="bao-login"
                       >
@@ -3553,11 +3323,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -3674,11 +3439,6 @@ ReactWrapper {
                       class="bao-container"
                       id=""
                     >
-                      <img
-                        alt="logo"
-                        class="bao-logo"
-                        src="Soccerball.svg"
-                      />
                       <div
                         class="bao-login"
                       >
@@ -3798,11 +3558,6 @@ ReactWrapper {
                     class="bao-container"
                     id=""
                   >
-                    <img
-                      alt="logo"
-                      class="bao-logo"
-                      src="Soccerball.svg"
-                    />
                     <div
                       class="bao-login"
                     >
@@ -3937,11 +3692,6 @@ ReactWrapper {
             class="bao-container"
             id=""
           >
-            <img
-              alt="logo"
-              class="bao-logo"
-              src="Soccerball.svg"
-            />
             <div
               class="bao-login"
             >
@@ -3968,53 +3718,27 @@ ReactWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <img
-                alt="logo"
-                className="bao-logo"
-                src="Soccerball.svg"
-              />,
-              <div
-                className="bao-login"
-              >
-                <form>
-                  <InputEl
-                    elname="username"
-                    elplaceholder="Enter your Name"
-                    eltype="text"
-                    legend="Name"
-                  />
-                  <ButtonEl
-                    eltype="submit"
-                    elvalue="Go"
-                  />
-                </form>
-              </div>,
-            ],
+            "children": <div
+              className="bao-login"
+            >
+              <form>
+                <InputEl
+                  elname="username"
+                  elplaceholder="Enter your Name"
+                  eltype="text"
+                  legend="Name"
+                />
+                <ButtonEl
+                  eltype="submit"
+                  elvalue="Go"
+                />
+              </form>
+            </div>,
             "className": "bao-container",
             "id": "",
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": <img
-                alt="logo"
-                class="bao-logo"
-                src="Soccerball.svg"
-              />,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "logo",
-                "className": "bao-logo",
-                "src": "Soccerball.svg",
-              },
-              "ref": null,
-              "rendered": Array [
-                undefined,
-              ],
-              "type": "img",
-            },
             Object {
               "instance": <div
                 class="bao-login"

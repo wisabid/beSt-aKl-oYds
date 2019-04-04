@@ -8,8 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        username : '',
-        ws : null
+        username : ''
+        // ws : null
     } 
     this.wsUrl = "ws://192.168.99.100:8889";
   }
@@ -17,10 +17,10 @@ class App extends Component {
   setUser = (ev) => {
       ev.preventDefault();
       if (ev.target.username.value) {
-        this.ws = new WebSocket(this.wsUrl);        
+        // this.ws = new WebSocket(this.wsUrl);        
         this.setState({
-            username : ev.target.username.value,
-            ws : this.ws
+            username : ev.target.username.value
+            // ws : this.ws
         })
       }
       else {

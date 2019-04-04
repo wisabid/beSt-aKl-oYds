@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import soccer from '../Soccerball.svg';
 import { InputEl, ButtonEl } from './FormElement';
 import UserContext from '../context/UserContext';
-import Home from './Home';
+import Home from '../containers/Home';
 import { connect } from 'react-redux';
 
 class Login extends Component {   
@@ -21,7 +21,7 @@ class Login extends Component {
                                         <ButtonEl elvalue="Go" eltype="submit"/>
                                     </form>
                                 </div>
-                                :<h4>hi{this.props.adduser(context.username) && this.props.users}</h4>
+                                :<Home />
                             }
                             
                         </div>
@@ -30,17 +30,5 @@ class Login extends Component {
             )
     }
 }
-
-// const mapStateToProps = (state) => {
-//     return {
-//         users : state.rL.users
-//     }
-// }
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         adduser : (user) => dispatch({type: 'ADD_USER', user : user})
-//     }
-// }
 
 export default Login;

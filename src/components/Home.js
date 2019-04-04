@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import UserContext from '../context/UserContext';
 
+
 class Home extends Component {
     static contextType = UserContext;
     state = {
@@ -9,7 +10,7 @@ class Home extends Component {
     }
 
     showDetail = (id) => {
-        let liveDetails =  this.state.livedata.filter((evnt, indx) => {
+        let liveDetails =  this.props.livedata.filter((evnt, indx) => {
             return id === evnt.eventId
         }) 
         this.setState({
@@ -22,6 +23,7 @@ class Home extends Component {
     }
 
     showlive = (data) => {
+        debugger;
         if (data.length === 1) {
             return data.map((evnt, indx) => {
                 return <li key={evnt.eventId}>{evnt.name} - <span onClick={this.showPM.bind(this, evnt.eventId)}>Show PM</span></li>
@@ -39,10 +41,11 @@ class Home extends Component {
     render() {
         return (
                 <>
-                
-                    {this.state.livedata
+                    <h4>Welcome <i>{this.context.username}</i></h4>
+                    {/* <h5>Dummy Date : {this.props.dummy}</h5> */}
+                    {this.props.livedata
                         ?<div className="bao-live">
-                            <ul>{this.showlive(this.state.livedata)}</ul>
+                            <ul>{this.showlive(this.props.livedata)}</ul>
                             {/* <div className="live-detail">{this.showlive(this.state.livedetails)}</div> */}
                         </div>
                         :null                       
@@ -51,9 +54,18 @@ class Home extends Component {
         )
     }
 
+    componentWillMount() {
+        // debugger;
+        this.props.getLiveEvent();
+    }
+
     componentDidMount() {
-        console.log('YOUR CONTEXT', this.context)
-        let self = this;
+        this.props.adduser(this.context.username);
+        console.log('YOUR CONTEXT', this.context);
+
+        // this.props.dummyEvent();
+        
+        /*let self = this;
         this.context.ws.addEventListener("open", () => {
             console.log('O p e n !')
             this.context.ws.send(JSON.stringify({ type: "getLiveEvents", primaryMarkets: true }))
@@ -67,7 +79,7 @@ class Home extends Component {
                     livedata : livedata.data
                 })
             }
-        });        
+        });     */ 
     }   
 }
 
