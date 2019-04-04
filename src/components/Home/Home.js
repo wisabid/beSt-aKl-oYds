@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import UserContext from '../context/UserContext';
-
+import UserContext from '../../context/UserContext';
+import PropTypes from 'prop-types';
 
 class Home extends Component {
     static contextType = UserContext;
@@ -81,6 +81,10 @@ class Home extends Component {
             }
         });     */ 
     }   
+}
+
+Home.propTypes = {
+    livedata: PropTypes.array
 }
 
 export default Home;

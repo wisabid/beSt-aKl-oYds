@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import soccer from '../Soccerball.svg';
-import { InputEl, ButtonEl } from './FormElement';
-import UserContext from '../context/UserContext';
-import Home from '../containers/Home';
+import soccer from '../../assets/images/Soccerball.svg';
+import { InputEl, ButtonEl } from '../FormElement/FormElement';
+import UserContext from '../../context/UserContext';
+import Home from '../../containers/Home';
 import { connect } from 'react-redux';
+
 
 class Login extends Component {   
 
@@ -30,5 +31,6 @@ class Login extends Component {
             )
     }
 }
+
 
 export default Login;

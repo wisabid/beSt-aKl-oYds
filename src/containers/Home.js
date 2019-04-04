@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import HomeComp from '../components/Home';
+import HomeComp from '../components/Home/Home';
 import { addUser, showlivedata } from '../store/actions';
 import socket from '../sockets';
 
