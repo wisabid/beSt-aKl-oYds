@@ -13,6 +13,8 @@ The primary market should also result in the odds showing for any outcomes linke
 - change px to 
 - change key indx to valid id
 - change messagetypes constant name
+- install ws
+- only display displayable
 
 
 ## REFERENCES

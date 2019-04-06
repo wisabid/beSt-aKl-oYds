@@ -5,6 +5,21 @@ export const addUser = (user) => ({
     user : user
 })
 
-export const showlivedata = () => ({
-    type : types.LIVE_EVENTS_DATA
+export const showlivedata = () => ({ 
+    type: "getLiveEvents", 
+    primaryMarkets: true 
 })
+
+export const showPrimaryMarket = (arrayOfMarkets) => {
+    return { 
+        type: "getMarket", 
+        id: arrayOfMarkets 
+    }
+}
+
+export const showOutcomes = (arrayOfOutcomes) => {
+    return { 
+        type: "getOutcome", 
+        id: arrayOfOutcomes 
+    }
+}

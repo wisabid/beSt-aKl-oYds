@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import soccer from '../../assets/images/Soccerball.svg';
-import { InputEl, ButtonEl } from '../FormElement/FormElement';
+import { InputEl, ButtonEl } from '../FormElement';
 import UserContext from '../../context/UserContext';
 import Home from '../../containers/Home';
 import { connect } from 'react-redux';

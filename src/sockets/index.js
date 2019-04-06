@@ -1,22 +1,30 @@
 import * as types from '../store/constants/ActionTypes';
-import { addUser, showlivedata } from '../store/actions';
+import { addUser, showlivedata, showOutcomes} from '../store/actions';
 
 const setupSocket = (dispatch, username) => {
     const socket = new WebSocket("ws://192.168.99.100:8889");
     socket.onopen = () => {
         debugger;
-        console.log('Connection is open my boy!');
+        console.log('Connection is open my boy!', socket);
         //socket.send(JSON.stringify(showlivedata()))
     }
     socket.onmessage = (event) => {
-        debugger;
+       
         console.log('YOU HAVE A MESSAGE MY BOY ');
-        console.log(event.data);
+        
         let data = JSON.parse(event.data);
+        console.table(data);
+        debugger;
         switch(data.type) {
             case "LIVE_EVENTS_DATA" : 
                 dispatch({type:'showlive', data: data });
                 break;
+            case "MARKET_DATA":
+                dispatch({type:'showmarket', data: data })
+                dispatch(showOutcomes(data.data.outcomes))
+                break;
+            case 'OUTCOME_DATA':
+                dispatch({type:'showoutcome', data: data })
             default :
         }
     }
@@ -28,6 +36,22 @@ const setupSocket = (dispatch, username) => {
     socket.onerror = (err) => {
         console.log('E R R O R !!!')
         console.error(err)
+    }
+
+    socket.waitForConnection= function(sendAction) {
+        let timeout;
+        if (this.readyState === 1) {
+            // console.clear();
+            console.log('Connecting nOWWW ....')
+            clearTimeout(timeout)
+            sendAction();
+        }
+        else {
+            timeout = setTimeout(() => {
+                console.log('Checking Again ....')
+                this.waitForConnection(sendAction)
+            }, 1000);
+        }
     }
     return socket;
 }

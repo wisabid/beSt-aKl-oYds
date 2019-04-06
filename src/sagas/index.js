@@ -1,23 +1,31 @@
-import { takeEvery, put } from 'redux-saga/effects';
+import { takeEvery, takeLatest, put } from 'redux-saga/effects';
 import * as types from '../store/constants/ActionTypes';
 import { showlivedata } from '../store/actions'
 
 function* dummyMW() {
-    debugger;
     console.log('Im from Dummy middleware')
     yield put({type:'dummy'})
 }
 
-function* getLiveMW(props) {
-    debugger;
-    yield put({type : 'getLiveData', data : ['Alfie', 2, 'My Son my life']})
-}
+// function* getLiveMW(props) {
+//     yield put({type : 'getLiveData', data : ['Alfie', 2, 'My Son my life']})
+// }
 
 export const handleLiveData = function* (params) {
-    debugger;
     yield takeEvery('dummyMW', dummyMW)
-    yield takeEvery('getLiveMW', (action) => {
-        debugger;
-        params.webS.send(JSON.stringify({ type: "getLiveEvents", primaryMarkets: true }))
+    yield takeEvery(types.LIVE_EVENTS_DATA, (action) => {
+        params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))
+        // params.webS.send(JSON.stringify(action))
+    })
+    yield takeLatest(types.MARKETS_DATA, (action) => {
+        action.id.map((market) => {
+            params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: market})))            
+        })
+    })
+    yield takeLatest(types.OUTCOME_DATA, (action) => {
+        debugger
+        action.id.map((outcome) => {
+            params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: outcome})))       
+        })
     })
 }

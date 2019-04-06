@@ -101,7 +101,7 @@ ul {
 .bao-live .live-detail {
   
 }
-.bao-live ul, .bao-live .live-detail{
+.bao-live ul{
   border-radius: 5px;
   border:2px solid #4285f4;
   padding:10px;

@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-        username : ''
+        username : 'Alfie'
         // ws : null
     } 
     this.wsUrl = "ws://192.168.99.100:8889";
