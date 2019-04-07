@@ -5,8 +5,9 @@ const translate = (props) => {
     // static contextType = UserContext;
     console.clear();
     
-    let newprops = {...props, oddsin : 'fractional'};
+    let newprops = {...props};
     console.log('MY ALFIEEEEEEEEEEEEE', newprops)
+   
     return newprops;
 }
 

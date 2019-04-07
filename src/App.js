@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Login from './containers/Login';
 import UserContext from './context/UserContext';
+import * as constants from './store/constants/constants';
 
 class App extends Component {  
   
   constructor() {
     super();
     this.state = {
-        username : 'Alfie'
+        username : 'Alfie',
+        odssunit : constants.ODDS_DECIMAL
         // ws : null
     } 
     this.wsUrl = "ws://192.168.99.100:8889";
@@ -29,6 +31,20 @@ class App extends Component {
       
   }
 
+  changeOddUnit = () => {
+    debugger;
+    let newunit;
+    if (this.state.odssunit === constants.ODDS_FRACTIONAL) {
+      newunit = constants.ODDS_DECIMAL;
+    }
+    else {
+      newunit = constants.ODDS_FRACTIONAL;
+    }
+    this.setState({
+      odssunit: newunit
+    })
+  }
+
   componentDidMount() {
     console.log('c o m p o n e n t   D i d M o u n t')
   }
@@ -38,7 +54,8 @@ class App extends Component {
       <UserContext.Provider value={{
           username : this.state.username,
           setuser : this.setUser,
-          ws : this.state.ws
+          odssunit : this.state.odssunit,
+          changeOddUnit : this.changeOddUnit
       }}>
         <div className="App">
             <Login />

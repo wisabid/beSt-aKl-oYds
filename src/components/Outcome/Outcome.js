@@ -1,19 +1,27 @@
 import React from 'react';
 import toggleOdds from '../../utils/toggleOdds';
+import UserContext from '../../context/UserContext';
+import * as constants from '../../store/constants/constants';
 
 const Outcome = (props) => {
     const { odata, marketid, eventid } = props;
+    
     return (
-        <dl >
+        <UserContext.Consumer>{context => 
+        (<dl >
             {
                 odata.map((outcome) => {
                     if (outcome.data.eventId === eventid && outcome.data.marketId === marketid) {
                         return (
                             <>
-                            <dt>{outcome.data.name} ?</dt>
+                            <dt>{outcome.data.name} - {context.odssunit} ?</dt>
                             <dd>- {outcome.data.outcomeId}</dd> 
                             <dt>ODDS</dt>
-                            <dd>- {outcome.data.price.decimal}</dd>                              
+                            {(context.odssunit === constants.ODDS_FRACTIONAL)
+                                ?<dd onClick={context.changeOddUnit}>- {outcome.data.price.num}/{outcome.data.price.num}</dd>
+                                :<dd onClick={context.changeOddUnit}>- {outcome.data.price.decimal}</dd>
+                            }
+                                                          
                             </>
                         )
                     }
@@ -21,6 +29,7 @@ const Outcome = (props) => {
             }
             
         </dl>
+        )}</UserContext.Consumer>
     )
 }
 
