@@ -24,6 +24,13 @@ export const showOutcomes = (arrayOfOutcomes) => {
     }
 }
 
+export const outcomeOnDemand = (id) => {
+    return { 
+        type: "getOutcome", 
+        id: id 
+    }
+}
+
 export const showEventDetails = (id) => {
     return { 
         type: "getEvent", 

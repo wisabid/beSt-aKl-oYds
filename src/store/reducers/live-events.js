@@ -23,7 +23,19 @@ const LiveEvents = (state = initialState, action) => {
             break;
         case 'showoutcome':
             let newoutcomedata = [...state.outcomedata]
-            newoutcomedata.push(action.data)
+            let findOutcome = newoutcomedata.find(item => item.data.outcomeId === action.data.data.outcomeId);
+            if (findOutcome) {
+                let updatedOutcomedata = newoutcomedata.map(item => {
+                    if (item.data.outcomeId === action.data.data.outcomeId) {
+                        item = action.data;
+                    }
+                    return item;
+                });                
+            }
+            else {
+                newoutcomedata.push(action.data);
+            }
+            
             return {...newState, outcomedata : newoutcomedata};
             break;
         case 'removemarketdata':

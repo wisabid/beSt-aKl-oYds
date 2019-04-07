@@ -32,7 +32,6 @@ class App extends Component {
   }
 
   changeOddUnit = () => {
-    debugger;
     let newunit;
     if (this.state.odssunit === constants.ODDS_FRACTIONAL) {
       newunit = constants.ODDS_DECIMAL;

@@ -18,7 +18,6 @@ export const handleLiveData = function* (params) {
         // params.webS.send(JSON.stringify(action))
     })
     yield takeLatest(types.MARKETS_DATA, (action) => {
-        debugger;
         action.id.map((market, index) => {
             if (index < 10) {
                 console.log(index);
@@ -31,7 +30,7 @@ export const handleLiveData = function* (params) {
                 params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: outcome})))   
         })
     })
-
+   
     yield takeLatest(types.EVENT_DATA, (action) => {
             params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))       
     })

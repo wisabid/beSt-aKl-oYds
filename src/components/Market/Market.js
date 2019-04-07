@@ -2,24 +2,29 @@ import React from 'react';
 import Outcome from '../Outcome'
 
 const Market = (props) => {
-    const { mdata, eventid, outcomedata } = props;
+    const { mdata, eventid, outcomedata, showOutcomOndemand } = props;
     return (
-        <dl >
+        <ul >
             {
                 mdata.map((market) => {
                     if (market.data.eventId === eventid) {
                         return (
                             <>
-                            <dt>{market.data.marketId} - {market.data.name} ?</dt>
-                            <dd>- {market.data.type}</dd>                                    
-                            <Outcome odata={outcomedata} eventid={eventid} marketid={market.data.marketId}/>                                    
+                            <li>{market.data.marketId} - {market.data.name} <br />
+                            - {market.data.type}   <br />                                
+                            <Outcome odata={outcomedata} eventid={eventid} marketid={market.data.marketId} 
+                                showOutcomOndemand={(id) => showOutcomOndemand(id)}
+                                mdata={mdata}   
+                            />     
+
+                            </li>                               
                             </>
                         )
                     }
                 })
             }
             
-        </dl>
+        </ul>
     )
 }
 

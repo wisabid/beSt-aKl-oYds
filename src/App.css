@@ -104,8 +104,8 @@ ul {
 .bao-live ul{
   border-radius: 5px;
   border:2px solid #4285f4;
-  padding:10px;
-  margin:0 10px 0 0;
+  padding:5px;
+  margin:0 10px;
   font-size: 1.8vmin;
   width: 100vw;
 }

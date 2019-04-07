@@ -7,7 +7,6 @@ const Detail = (props) => {
     console.clear();
     console.log('ALFIEEE', eventdata)
     useEffect(() => {
-        debugger;
         console.log('R E A C T   H O O K S');
     });
 
