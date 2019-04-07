@@ -1,10 +1,9 @@
 import * as types from '../store/constants/ActionTypes';
-import { addUser, showlivedata, showOutcomes} from '../store/actions';
+import { addUser, showlivedata, showOutcomes, showPrimaryMarket} from '../store/actions';
 
 const setupSocket = (dispatch, username) => {
     const socket = new WebSocket("ws://192.168.99.100:8889");
     socket.onopen = () => {
-        debugger;
         console.log('Connection is open my boy!', socket);
         //socket.send(JSON.stringify(showlivedata()))
     }
@@ -14,7 +13,6 @@ const setupSocket = (dispatch, username) => {
         
         let data = JSON.parse(event.data);
         console.table(data);
-        debugger;
         switch(data.type) {
             case "LIVE_EVENTS_DATA" : 
                 dispatch({type:'showlive', data: data });
@@ -25,6 +23,11 @@ const setupSocket = (dispatch, username) => {
                 break;
             case 'OUTCOME_DATA':
                 dispatch({type:'showoutcome', data: data })
+                break;
+            case 'EVENT_DATA':
+                dispatch({type:'showevent', data: data.data })
+                dispatch(showPrimaryMarket(data.data.markets))
+                break;
             default :
         }
     }

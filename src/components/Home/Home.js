@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import UserContext from '../../context/UserContext';
-import Detail from '../Detail';
+import Detail from '../../containers/Detail';
+import Market from  '../../containers/Market';
+import Event from '../../containers/Event';
 
 class Home extends Component {
     static contextType = UserContext;
@@ -18,12 +20,12 @@ class Home extends Component {
     }
 
     showDetail = (id) => {
-        let liveDetails =  this.props.livedata.filter((evnt, indx) => {
-            return id === evnt.eventId
-        }) 
+        this.props.showdetail(id);
+        // let liveDetails =  this.props.livedata.filter((evnt, indx) => {
+        //     return id === evnt.eventId
+        // }) 
         this.setState({
-            showdetail : true,
-            livedetails : liveDetails
+            showdetail : true
         })
     }
 
@@ -46,77 +48,11 @@ class Home extends Component {
         
     }
 
-    showOutcomedata = (id) => {
-        debugger;
-        if (this.props.outcomedata.length) {
-            return (
-                <dl >
-                    {
-                        this.props.outcomedata.map((outcome) => {
-                            if (outcome.data.eventId === id) {
-                                return (
-                                    <>
-                                    <dt>{outcome.data.name} ?</dt>
-                                    <dd>- {outcome.data.outcomeId}</dd>
-                                    <dt>Alfie</dt>
-                                    <dd>- My love</dd>
-                                    </>
-                                )
-                            }
-                        })
-                    }
-                    
-                </dl>
-            )
-        }
-    }
-
-    showPrimarymarket = (id) => {
-        debugger;
-        if (this.props.marketdata.length) {
-            return (
-                <dl >
-                    {
-                        this.props.marketdata.map((market) => {
-                            if (market.data.eventId === id) {
-                                return (
-                                    <>
-                                    <dt>{market.data.name} ?</dt>
-                                    <dd>- {market.data.type}</dd>
-                                    <dt>Milk</dt>
-                                    <dd>- white cold drink</dd>
-                                    {this.showOutcomedata(id)}
-                                    </>
-                                )
-                            }
-                        })
-                    }
-                    
-                </dl>
-            )
-        }
-    }
-
-    showlive = (data) => {
-            return data.map((evnt, indx) => {
-                return (
-                <li key={evnt.eventId} >
-                    -> <span onClick={this.showDetail.bind(this, evnt.eventId)}>{evnt.name}</span> - <a href="#" onClick={this.handlePM.bind(this, evnt)}>(PM)</a>
-                    {(this.state.showpmlist.indexOf(evnt.eventId) !== -1)
-                        ?(this.showPrimarymarket(evnt.eventId))
-                        :null
-                    }
-                    
-                    </li>
-                )
-            }) 
-    }
-    
+          
     render() {
         if (this.state.showdetail) {
             return (
-                <Detail 
-                    livedetails={this.state.livedetails} 
+                <Detail                     
                     goback={this.handleBack}
                 />
             )
@@ -128,8 +64,12 @@ class Home extends Component {
                     {/* <h5>Dummy Date : {this.props.dummy}</h5> */}
                     {this.props.livedata
                         ?<><div className="bao-live">
-                            <ul>{this.showlive(this.props.livedata)}</ul>                            
-                        </div>
+                                <Event edata={this.props.livedata} 
+                                    showDetail={this.showDetail.bind(this)}
+                                    handlePM={this.handlePM.bind(this)}
+                                    showpmlist={this.state.showpmlist}
+                                />                            
+                           </div>
                         
                         </>
                         :<h2>Loading...</h2>                      

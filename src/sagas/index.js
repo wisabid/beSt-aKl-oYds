@@ -18,14 +18,21 @@ export const handleLiveData = function* (params) {
         // params.webS.send(JSON.stringify(action))
     })
     yield takeLatest(types.MARKETS_DATA, (action) => {
-        action.id.map((market) => {
-            params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: market})))            
+        debugger;
+        action.id.map((market, index) => {
+            if (index < 10) {
+                console.log(index);
+                params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: market})))   
+            }         
         })
     })
     yield takeLatest(types.OUTCOME_DATA, (action) => {
-        debugger
-        action.id.map((outcome) => {
-            params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: outcome})))       
+        action.id.map((outcome, index) => {
+                params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: outcome})))   
         })
+    })
+
+    yield takeLatest(types.EVENT_DATA, (action) => {
+            params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))       
     })
 }

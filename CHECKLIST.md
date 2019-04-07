@@ -2,6 +2,7 @@
 
 - Add an option to show the primary market for each of the events
 The primary market should also result in the odds showing for any outcomes linked to the market  
+- Can an event hold multiple primary markets?
 
 
 

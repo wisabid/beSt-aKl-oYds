@@ -5,11 +5,11 @@ const initialState = {
     dummy : '',
     livedata : [],
     marketdata : [],
-    outcomedata : []
+    outcomedata : [],
+    eventdata : []
 }
 const LiveEvents = (state = initialState, action) => {
     let newState = {...state};
-    debugger;
     switch(action.type) {
         case 'dummy':
             return {...newState, dummy : 'Dummy filled !'}        
@@ -30,6 +30,11 @@ const LiveEvents = (state = initialState, action) => {
             let updatedmarketdata = newState.marketdata.filter(item => item.data.eventId !== action.id);
             let updatedoutcomedata = newState.outcomedata.filter(item => item.data.eventId !== action.id);
             return {...newState, marketdata : updatedmarketdata, outcomedata : updatedoutcomedata}
+            break;
+        case 'showevent':
+            let neweventdata = [];
+            neweventdata.push(action.data)
+            return {...newState, eventdata : neweventdata};
             break;
         case types.ADD_USER:
             // newState.users.push(action.user)

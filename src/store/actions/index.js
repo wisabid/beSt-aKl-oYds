@@ -23,3 +23,11 @@ export const showOutcomes = (arrayOfOutcomes) => {
         id: arrayOfOutcomes 
     }
 }
+
+export const showEventDetails = (id) => {
+    return { 
+        type: "getEvent", 
+        id: id 
+    }
+}
+
