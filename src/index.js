@@ -14,7 +14,7 @@ import { handleLiveData } from './sagas'
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(reducers, applyMiddleware(sagaMiddleware));
 const webS = socket(store.dispatch, )
-sagaMiddleware.run(handleLiveData, { webS })
+sagaMiddleware.run(handleLiveData, { webS, dispatch : store.dispatch })
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

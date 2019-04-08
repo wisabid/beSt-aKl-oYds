@@ -4,7 +4,8 @@ import DetailComp from '../components/Detail';
 const mapStateToProps = (state) => {
     return {        
         eventdata : state.rL.eventdata,
-        marketdata : state.rL.marketdata
+        marketdata : state.rL.marketdata,
+        ondemandmarketdata : state.rL.ondemandmarketdata,
     }
 }
 

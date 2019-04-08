@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import toggleOdds from '../../utils/toggleOdds';
 import UserContext from '../../context/UserContext';
 import * as constants from '../../store/constants/constants';
 
 const Outcome = (props) => {
     const { odata, marketid, eventid, showOutcomOndemand, mdata } = props;
+
+    useEffect(() => {
+            console.log(' C O M P DID M O U N T', props.outcomes)
+            props.showOutcomes(props.outcomes)
+    }, []); // passing an empty array as second argument triggers the callback in useEffect only after the initial render thus replicating `componentDidMount` lifecycle behaviour
+
+
     if (odata.length) {    
         return (
             <UserContext.Consumer>{context => 
@@ -15,7 +22,7 @@ const Outcome = (props) => {
                             return ( 
                                 <>
                                 <li>
-                                    <span onClick={() => showOutcomOndemand(outcome.data.outcomeId)}><b>(O)</b>{outcome.data.name}</span>  <br />
+                                    <span onClick={() => showOutcomOndemand(outcome.data.outcomeId)}>{outcome.data.name}</span>  <br />
                                     <div>
                                     - {outcome.data.outcomeId}<br />
                                     ODDS <br />

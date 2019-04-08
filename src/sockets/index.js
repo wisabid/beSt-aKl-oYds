@@ -44,7 +44,6 @@ const setupSocket = (dispatch, username) => {
     socket.waitForConnection= function(sendAction) {
         let timeout;
         if (this.readyState === 1) {
-            // console.clear();
             console.log('Connecting nOWWW ....')
             clearTimeout(timeout)
             sendAction();

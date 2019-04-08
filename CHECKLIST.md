@@ -16,6 +16,10 @@ The primary market should also result in the odds showing for any outcomes linke
 - change messagetypes constant name
 - install ws
 - only display displayable
+- colored consoles
+- error handling
+- data property placements in response
+- componentdidcatch
 
 
 ## REFERENCES

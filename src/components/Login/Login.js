@@ -14,7 +14,7 @@ class Login extends Component {
                     {context => (
                         <div className="bao-container" id={context.username}>
                             
-                            <img src={soccer} className="bao-logo" alt="logo" />
+                            {/* <img src={soccer} className="bao-logo" alt="logo" /> */}
                             {!context.username
                                 ?<div className="bao-login">
                                     <form onSubmit={context.setuser}>

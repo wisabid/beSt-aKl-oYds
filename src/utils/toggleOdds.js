@@ -3,7 +3,6 @@ import UserContext from '../context/UserContext'
 
 const translate = (props) => {
     // static contextType = UserContext;
-    console.clear();
     
     let newprops = {...props};
     console.log('MY ALFIEEEEEEEEEEEEE', newprops)

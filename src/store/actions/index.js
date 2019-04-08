@@ -17,6 +17,13 @@ export const showPrimaryMarket = (arrayOfMarkets) => {
     }
 }
 
+export const showMarketOndemand = (id) => {
+    return { 
+        type: "getMarket", 
+        id: id 
+    }
+}
+
 export const showOutcomes = (arrayOfOutcomes) => {
     return { 
         type: "getOutcome", 

@@ -6,7 +6,8 @@ const initialState = {
     livedata : [],
     marketdata : [],
     outcomedata : [],
-    eventdata : []
+    eventdata : [],
+    ondemandmarketdata : []
 }
 const LiveEvents = (state = initialState, action) => {
     let newState = {...state};
@@ -17,9 +18,23 @@ const LiveEvents = (state = initialState, action) => {
             return {...newState, livedata : action.data};
             break;
         case 'showmarket':
-            let newmarketdata = [...state.marketdata]
-            newmarketdata.push(action.data)
-            return {...newState, marketdata : newmarketdata};
+            let newmarketdata = [...state.marketdata];
+            let newondemandmarketdata = [...state.ondemandmarketdata]
+            let findMarket = newmarketdata.find(item => item.data.marketId === action.data.data.marketId);
+            if (findMarket) {
+                let updatedMarketdata = newmarketdata.map(item => {
+                    if (item.data.marketId === action.data.data.marketId) {
+                        item = action.data;
+                    }
+                    return item;
+                });                
+            }
+            else {
+                newmarketdata.push(action.data);
+                newondemandmarketdata.splice(newondemandmarketdata.indexOf(action.data.data.marketId), 1);
+                debugger;
+            }
+            return {...newState, marketdata : newmarketdata, ondemandmarketdata : newondemandmarketdata};
             break;
         case 'showoutcome':
             let newoutcomedata = [...state.outcomedata]
@@ -48,6 +63,9 @@ const LiveEvents = (state = initialState, action) => {
             neweventdata.push(action.data)
             return {...newState, eventdata : neweventdata};
             break;
+        case 'showondemandmdata':
+        debugger;
+            return {...newState, ondemandmarketdata : action.data}
         case types.ADD_USER:
             // newState.users.push(action.user)
             return newState

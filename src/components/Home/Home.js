@@ -15,15 +15,13 @@ class Home extends Component {
 
     handleBack = () => {
         this.setState({
-            showdetail : false
+            showdetail : false,
+            showpmlist : []
         })
     }
 
     showDetail = (id) => {
-        this.props.showdetail(id);
-        // let liveDetails =  this.props.livedata.filter((evnt, indx) => {
-        //     return id === evnt.eventId
-        // }) 
+        this.props.showdetail(id);        
         this.setState({
             showdetail : true
         })
@@ -67,7 +65,8 @@ class Home extends Component {
                                 <Event edata={this.props.livedata} 
                                     showDetail={this.showDetail.bind(this)}
                                     handlePM={this.handlePM.bind(this)}
-                                    showpmlist={this.state.showpmlist}
+                                    showpmlist={this.state.showpmlist} 
+                                    pmarket="true"
                                 />                            
                            </div>
                         

@@ -4,7 +4,6 @@ import Market from '../../containers/Market';
 
 const Detail = (props) => {
     const { eventdata } = props;
-    console.clear();
     console.log('ALFIEEE', eventdata)
     useEffect(() => {
         console.log('R E A C T   H O O K S');
@@ -20,7 +19,7 @@ const Detail = (props) => {
                             return (
                                 <li key={evnt.eventId}>
                                     -> <span>{evnt.name}</span> - 
-                                    <Market mdata={props.marketdata} eventid={evnt.eventId} />
+                                    <Market mdata={props.marketdata} eventid={evnt.eventId} ondmdata={[]}/>
                                       
                                 
                                 </li>
