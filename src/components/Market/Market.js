@@ -1,5 +1,6 @@
 import React from 'react';
-import Outcome from '../Outcome'
+import Outcome from '../Outcome';
+
 
 const Market = (props) => {
     const { mdata, eventid, outcomedata, showOutcomOndemand, showMarketOndemand, pmarket, ondmdata } = props;
@@ -21,7 +22,9 @@ const Market = (props) => {
         }
         else {
             return (
-                <h4>Loading...</h4>
+                <ul>
+                    <li>Suspended</li>
+                </ul>
             )
         }
     }
@@ -53,8 +56,12 @@ const Market = (props) => {
                         
                             return (
                                 <>
-                                <li><b>(M)</b><span onClick={() => showMarketOndemand(market)}>{market} - EXTRAAAAA</span> <br />                               
-                                    
+                                <li><b>(M)</b><span onClick={() => props.showMarketOndemandAlt(market.marketId)}>{market.marketId} - EXTRAAAAA</span> <br />                               
+                                - {market.type}   <br />                                
+                                <Outcome odata={outcomedata} eventid={eventid} marketid={market.marketId} 
+                                    showOutcomOndemand={(id) => showOutcomOndemand(id)}
+                                    mdata={mdata}   
+                                />    
 
                                 </li>                               
                                 </>

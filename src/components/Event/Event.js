@@ -3,6 +3,7 @@ import Market from '../../containers/Market'
 
 const Event = (props) => {
     const { edata, showDetail, handlePM, showpmlist, pmarket } = props;
+    if (edata.length) {
     return (
         <ul>
             {
@@ -21,6 +22,12 @@ const Event = (props) => {
             }
         </ul>
     )
+    }
+    else {
+        return (
+            <h4>Loading...</h4>
+        )
+    }
 }
 
 export default Event;

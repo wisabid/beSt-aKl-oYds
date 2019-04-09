@@ -1,5 +1,4 @@
 import React from 'react';
-import toggleOdds from '../../utils/toggleOdds';
 import UserContext from '../../context/UserContext';
 import * as constants from '../../store/constants/constants';
 
@@ -44,4 +43,4 @@ const Outcome = (props) => {
     }
 }
 
-export default toggleOdds(Outcome);
+export default Outcome;

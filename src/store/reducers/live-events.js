@@ -15,26 +15,47 @@ const LiveEvents = (state = initialState, action) => {
         case 'dummy':
             return {...newState, dummy : 'Dummy filled !'}        
         case 'showlive':
-            return {...newState, livedata : action.data};
+            // let displayableData = action.data.data.filter((item) => item.status.displayable === true)
+            return {...newState, livedata : action.data.data};
             break;
         case 'showmarket':
-            let newmarketdata = [...state.marketdata];
             let newondemandmarketdata = [...state.ondemandmarketdata]
-            let findMarket = newmarketdata.find(item => item.data.marketId === action.data.data.marketId);
-            if (findMarket) {
-                let updatedMarketdata = newmarketdata.map(item => {
-                    if (item.data.marketId === action.data.data.marketId) {
-                        item = action.data;
+            let findMarketinOND = newondemandmarketdata.filter(item => item.marketId === action.data.data.marketId);
+            //if it falls in ondemand market data state
+            if (findMarketinOND.length) {
+                findMarketinOND = action.data.data;
+                newondemandmarketdata = newondemandmarketdata.map(item => {
+                    if (item.marketId === action.data.data.marketId) {
+                        item = findMarketinOND;
                     }
                     return item;
-                });                
+                })
+                // newondemandmarketdata = newondemandmarketdata.filter(item => {
+                //     if ('status' in item && item.status.displayable) {
+                //         return item;
+                //     }
+                // });
+                return {...newState, ondemandmarketdata : newondemandmarketdata}
             }
             else {
-                newmarketdata.push(action.data);
-                newondemandmarketdata.splice(newondemandmarketdata.indexOf(action.data.data.marketId), 1);
-                debugger;
+                let newmarketdata = [...state.marketdata];
+                
+                let findMarket = newmarketdata.find(item => item.data.marketId === action.data.data.marketId);
+                if (findMarket) {
+                    let updatedMarketdata = newmarketdata.map(item => {
+                        if (item.data.marketId === action.data.data.marketId) {
+                            item = action.data;
+                        }
+                        return item;
+                    });                
+                }
+                else {
+                    newmarketdata.push(action.data);
+                    //newondemandmarketdata.splice(newondemandmarketdata.indexOf(action.data.data.marketId), 1);
+                }
+                // newmarketdata = newmarketdata.filter(item => item.data.status.displayable === true);
+                return {...newState, marketdata : newmarketdata, ondemandmarketdata : newondemandmarketdata};
             }
-            return {...newState, marketdata : newmarketdata, ondemandmarketdata : newondemandmarketdata};
             break;
         case 'showoutcome':
             let newoutcomedata = [...state.outcomedata]
@@ -50,7 +71,7 @@ const LiveEvents = (state = initialState, action) => {
             else {
                 newoutcomedata.push(action.data);
             }
-            
+            newoutcomedata = newoutcomedata.filter(item => item.data.status.displayable === true);
             return {...newState, outcomedata : newoutcomedata};
             break;
         case 'removemarketdata':
@@ -64,8 +85,11 @@ const LiveEvents = (state = initialState, action) => {
             return {...newState, eventdata : neweventdata};
             break;
         case 'showondemandmdata':
-        debugger;
             return {...newState, ondemandmarketdata : action.data}
+            break;
+        case 'reset':
+            return {...newState, marketdata: [], outcomedata : [], eventdata : [], ondemandmarketdata : []}
+            break;
         case types.ADD_USER:
             // newState.users.push(action.user)
             return newState

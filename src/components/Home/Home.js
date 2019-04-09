@@ -14,6 +14,7 @@ class Home extends Component {
     };
 
     handleBack = () => {
+        this.props.resetData();
         this.setState({
             showdetail : false,
             showpmlist : []

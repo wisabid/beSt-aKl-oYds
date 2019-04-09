@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import HomeComp from '../components/Home';
-import { addUser, showlivedata, showPrimaryMarket, showEventDetails } from '../store/actions';
+import { addUser, showlivedata, showPrimaryMarket, showEventDetails, resetdata } from '../store/actions';
 import socket from '../sockets';
 
 const mapStateToProps = (state) => {
     return {
         users : state.rL.users,
         dummy : state.rL.dummy,
-        livedata : state.rL.livedata.data,
+        livedata : state.rL.livedata,
         marketdata : state.rL.marketdata,
         outcomedata : state.rL.outcomedata
     }
@@ -30,7 +30,8 @@ const mapDispatchToProps = (dispatch) => {
         getLiveEvent : () => dispatch(showlivedata()),
         showPM: (markets) => dispatch(showPrimaryMarket(markets)),
         removemarketdata : (id) => dispatch({type: 'removemarketdata', id: id}),
-        showdetail: (id) => dispatch(showEventDetails(id))
+        showdetail: (id) => dispatch(showEventDetails(id)),
+        resetData: () => dispatch(resetdata())
     }
 }
 

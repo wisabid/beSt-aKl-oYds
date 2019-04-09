@@ -24,6 +24,16 @@ export const showMarketOndemand = (id) => {
     }
 }
 
+export const showMarketOndemandAlt = (id, altflag=true) => {
+    return { 
+        type: "getMarket_alt", 
+        payload : {
+            id: id,
+            altflag : true
+        }
+    }
+}
+
 export const showOutcomes = (arrayOfOutcomes) => {
     return { 
         type: "getOutcome", 
@@ -42,6 +52,12 @@ export const showEventDetails = (id) => {
     return { 
         type: "getEvent", 
         id: id 
+    }
+}
+
+export const resetdata = () => {
+    return {
+        type: "reset"
     }
 }
 

@@ -31,7 +31,7 @@ export const handleLiveData = function* (params) {
             } 
             else {
                 console.log('I M    NOT   SENDING ANY MESSAGE', index);
-                ondmdata.push(market)
+                ondmdata.push({marketId : market})
             }        
         })
         if (ondmdata.length) {
@@ -39,6 +39,11 @@ export const handleLiveData = function* (params) {
             // loadondmdata(ondmdata);
         }
     })
+
+    yield takeLatest('getMarket_alt', (action) => {
+        params.webS.waitForConnection(() => params.webS.send(JSON.stringify({type:"getMarket", id: action.payload.id[0]})))  
+    })
+
     yield takeLatest(types.OUTCOME_DATA, (action) => {
         action.id.map((outcome, index) => {
                 params.webS.waitForConnection(() => params.webS.send(JSON.stringify({...action, id: outcome})))   

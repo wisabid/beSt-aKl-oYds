@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import EventComp from '../components/Event';
+import displayWrapper from '../utils/displayWrapper';
 
 const mapStateToProps = (state) => {
     return {        
@@ -7,6 +8,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-const Event = connect(mapStateToProps, dispatch => {})(EventComp);
+const Event = connect(mapStateToProps, dispatch => {})(displayWrapper(EventComp));
 
 export default Event;

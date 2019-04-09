@@ -3,6 +3,7 @@
 - Add an option to show the primary market for each of the events
 The primary market should also result in the odds showing for any outcomes linked to the market  
 - Can an event hold multiple primary markets?
+- how about an ondemand market holding displayable as false?
 
 
 
@@ -20,6 +21,7 @@ The primary market should also result in the odds showing for any outcomes linke
 - error handling
 - data property placements in response
 - componentdidcatch
+- optimize reducers logic
 
 
 ## REFERENCES
