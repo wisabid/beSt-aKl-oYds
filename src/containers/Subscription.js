@@ -1,12 +1,9 @@
 import { connect } from 'react-redux';
-import DetailComp from '../components/Detail';
+import SubsComp from '../components/Subscription';
 import {subscribe_bao, unsubscribe_bao} from '../store/actions/'
 
 const mapStateToProps = (state) => {
     return {        
-        eventdata : state.rL.eventdata,
-        marketdata : state.rL.marketdata,
-        ondemandmarketdata : state.rL.ondemandmarketdata,
         subscriptions : state.rL.subscriptions
     }
 }
@@ -18,6 +15,6 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-const Detail = connect(mapStateToProps, mapDispatchToProps)(DetailComp);
+const Subscription = connect(mapStateToProps, mapDispatchToProps)(SubsComp);
 
-export default Detail;
+export default Subscription;

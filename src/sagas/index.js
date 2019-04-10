@@ -19,7 +19,7 @@ function* loadondmdata(data) {
 export const handleLiveData = function* (params) {
     yield takeEvery('dummyMW', dummyMW)
     yield takeEvery(types.LIVE_EVENTS_DATA, (action) => {
-        params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))
+        params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)));
         // params.webS.send(JSON.stringify(action))
     })
     yield takeLatest(types.MARKETS_DATA, (action) => {
@@ -53,4 +53,13 @@ export const handleLiveData = function* (params) {
     yield takeLatest(types.EVENT_DATA, (action) => {
             params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))       
     })
+
+    yield takeLatest(types.SUBSCRIBE_BAO, (action) => {
+        params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))    
+    })
+    
+    yield takeLatest(types.UNSUBSCRIBE_BAO, (action) => {
+        params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))    
+    })
+
 }

@@ -61,3 +61,17 @@ export const resetdata = () => {
     }
 }
 
+export const subscribe_bao = (payload) => {
+    return {
+        type: 'subscribe',
+        keys: [payload]
+    }
+}
+
+export const unsubscribe_bao = (payload) => {
+    return {
+        type: 'unsubscribe',
+        keys: [payload]
+    }
+}
+

@@ -12,7 +12,7 @@ const setupSocket = (dispatch, username) => {
         console.log('YOU HAVE A MESSAGE MY BOY ');
         
         let data = JSON.parse(event.data);
-        console.table(data);
+        console.table('MESSAGE_RECEIVED', data);
         switch(data.type) {
             case "LIVE_EVENTS_DATA" : 
                 dispatch({type:'showlive', data: data });
@@ -27,6 +27,18 @@ const setupSocket = (dispatch, username) => {
             case 'EVENT_DATA':
                 dispatch({type:'showevent', data: data.data })
                 dispatch(showPrimaryMarket(data.data.markets))
+                break;
+            case 'CURRENT_SUBSCRIPTIONS':
+                dispatch({type: 'showsubsriptions', data: data.data})
+                break;
+            case 'PRICE_CHANGE':
+                dispatch({type: 'update_outcomeprice', data: data.data})
+                break;
+            case 'MARKET_STATUS':
+                dispatch({type: 'update_marketstatus', data: data.data})
+                break;
+            case 'OUTCOME_STATUS':
+                dispatch({type: 'update_outcomestatus', data: data.data})
                 break;
             default :
         }

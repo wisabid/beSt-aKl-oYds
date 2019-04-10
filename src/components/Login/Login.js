@@ -3,17 +3,13 @@ import soccer from '../../assets/images/Soccerball.svg';
 import { InputEl, ButtonEl } from '../FormElement';
 import UserContext from '../../context/UserContext';
 import Home from '../../containers/Home';
-import { connect } from 'react-redux';
 
 
-class Login extends Component {   
-
-    render() {
+const Login = () => {
             return (
                 <UserContext.Consumer>
                     {context => (
                         <div className="bao-container" id={context.username}>
-                            
                             <img src={soccer} className="bao-logo" alt="logo" />
                             {!context.username
                                 ?<div className="bao-login">
@@ -29,7 +25,6 @@ class Login extends Component {
                     )}
                 </UserContext.Consumer>      
             )
-    }
 }
 
 

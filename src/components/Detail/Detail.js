@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 // import Event from '../../containers/Event'
 import Market from '../../containers/Market';
+import Subscription from '../../containers/Subscription'
 
 const Detail = (props) => {
     const { eventdata } = props;
@@ -19,6 +20,9 @@ const Detail = (props) => {
                             return (
                                 <li key={evnt.eventId}>
                                     -> <span>{evnt.name}</span> - 
+                                    <Subscription 
+                                        uid={`e.${evnt.eventId}`} 
+                                    />
                                     <Market mdata={props.marketdata} eventid={evnt.eventId} ondmdata={[]}/>
                                       
                                 

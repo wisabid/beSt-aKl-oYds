@@ -7,10 +7,12 @@ const initialState = {
     marketdata : [],
     outcomedata : [],
     eventdata : [],
-    ondemandmarketdata : []
+    ondemandmarketdata : [],
+    subscriptions : []
 }
 const LiveEvents = (state = initialState, action) => {
     let newState = {...state};
+    console.log('SHABZ', newState)
     switch(action.type) {
         case 'dummy':
             return {...newState, dummy : 'Dummy filled !'}        
@@ -89,6 +91,47 @@ const LiveEvents = (state = initialState, action) => {
             break;
         case 'reset':
             return {...newState, marketdata: [], outcomedata : [], eventdata : [], ondemandmarketdata : []}
+            break;
+        case 'showsubsriptions':
+            return {...newState, subscriptions : action.data}
+            break;
+        case 'update_outcomeprice':
+            if (newState.outcomedata.length) {
+                let newOutcomedata = newState.outcomedata.map(outcome => {
+                    if (outcome.data.outcomeId === action.data.outcomeId) {
+                        outcome.data.price = action.data.price;
+                        outcome.data.status = action.data.status;
+                    }
+                    return outcome;
+                })
+                return {...newState, outcomedata:newOutcomedata}
+            }
+            return {...newState}
+            break;
+        case 'update_marketstatus':
+            if (newState.marketdata.length) {
+                let newMarketdata = newState.marketdata.map(market => {
+                    if (market.data.marketId === action.data.marketId) {
+                        debugger;
+                        market.data.status = action.data.status;
+                    }
+                    return market;
+                })
+                return {...newState, marketdata:newMarketdata}
+            }
+            return {...newState}
+            break;
+        case 'update_outcomestatus':
+            if (newState.outcomedata.length) {
+                let newOutcomedata = newState.outcomedata.map(outcome => {
+                    if (outcome.data.outcomeId === action.data.outcomeId) {
+                        outcome.data.status = action.data.status;
+                    }
+                    return outcome;
+                })
+                return {...newState, outcomedata:newOutcomedata}
+            }
+            return {...newState}
             break;
         case types.ADD_USER:
             // newState.users.push(action.user)

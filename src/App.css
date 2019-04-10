@@ -109,4 +109,7 @@ ul {
   font-size: 1.8vmin;
   width: 100vw;
 }
+ul.noborder {
+  border:none;
+}
 /* Home COmponent styles end here */

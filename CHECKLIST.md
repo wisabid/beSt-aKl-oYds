@@ -4,6 +4,9 @@
 The primary market should also result in the odds showing for any outcomes linked to the market  
 - Can an event hold multiple primary markets?
 - how about an ondemand market holding displayable as false?
+- An end point for getting current subscriptions?
+- price : num, den , decimal etc
+- difference between status in pricechange & outcomestatus
 
 
 
@@ -22,6 +25,16 @@ The primary market should also result in the odds showing for any outcomes linke
 - data property placements in response
 - componentdidcatch
 - optimize reducers logic
+- response types are :
+0: "CURRENT_SUBSCRIPTIONS"
+1: "LIVE_EVENTS_DATA"
+2: "EVENT_DATA"
+3: "MARKET_DATA"
+4: "OUTCOME_DATA"
+5: "PRICE_CHANGE"
+6: "MARKET_STATUS"
+7: "OUTCOME_STATUS"
+8: "ERROR"
 
 
 ## REFERENCES
