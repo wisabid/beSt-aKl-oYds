@@ -37,6 +37,7 @@ const LiveEvents = (state = initialState, action) => {
                 //         return item;
                 //     }
                 // });
+                
                 return {...newState, ondemandmarketdata : newondemandmarketdata}
             }
             else {
@@ -56,6 +57,7 @@ const LiveEvents = (state = initialState, action) => {
                     //newondemandmarketdata.splice(newondemandmarketdata.indexOf(action.data.data.marketId), 1);
                 }
                 // newmarketdata = newmarketdata.filter(item => item.data.status.displayable === true);
+                
                 return {...newState, marketdata : newmarketdata, ondemandmarketdata : newondemandmarketdata};
             }
             break;

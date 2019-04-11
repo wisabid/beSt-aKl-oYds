@@ -11,13 +11,13 @@ const Market = (props) => {
                 <fieldset>
                 <legend>Primary Market</legend>
                 <ul className="noborder">
-                <li><b>(M)</b><span onClick={() => showMarketOndemand(mdata[0].data.marketId)}>{mdata[0].data.marketId} - {mdata[0].data.name}</span> <br />
-                - {mdata[0].data.type}   
+                <li><b>(M)</b><span onClick={() => showMarketOndemand(mdata[0].marketId)}>{mdata[0].marketId} - {mdata[0].name}</span> <br />
+                - {mdata[0].type}   
                 <Subscription 
-                    uid={`m.${mdata[0].data.marketId}`}
+                    uid={`m.${mdata[0].marketId}`}
                 />   
                 <br />                                
-                <Outcome odata={outcomedata} eventid={eventid} marketid={mdata[0].data.marketId} 
+                <Outcome odata={outcomedata} eventid={eventid} marketid={mdata[0].marketId} 
                     showOutcomOndemand={(id) => showOutcomOndemand(id)}
                     mdata={mdata[0]}   
                 />     
@@ -42,16 +42,16 @@ const Market = (props) => {
             <ul className="noborder">
                 {
                     mdata.map((market) => {
-                        if (market.data.eventId === eventid) {
+                        if (market.eventId === eventid) {
                             return (
                                 <>
-                                <li><b>(M)</b><span onClick={() => showMarketOndemand(market.data.marketId)}>{market.data.marketId} - {market.data.name}</span> <br />
-                                - {market.data.type}   
+                                <li><b>(M)</b><span onClick={() => showMarketOndemand(market.marketId)}>{market.marketId} - {market.name}</span> <br />
+                                - {market.type}   
                                 <Subscription 
-                                    uid={`m.${market.data.marketId}`}
+                                    uid={`m.${market.marketId}`}
                                 />   
                                 <br />                                
-                                <Outcome odata={outcomedata} eventid={eventid} marketid={market.data.marketId} 
+                                <Outcome odata={outcomedata} eventid={eventid} marketid={market.marketId} 
                                     showOutcomOndemand={(id) => showOutcomOndemand(id)}
                                     mdata={mdata}   
                                 />     

@@ -24,6 +24,7 @@ export const handleLiveData = function* (params) {
     })
     yield takeLatest(types.MARKETS_DATA, (action) => {
         let ondmdata = [];
+        
         action.id.map((market, index) => {
             if (index < 10) {
                 console.log(index);
