@@ -5,7 +5,23 @@ const displayGate = (props) => {
     
     let newprops = {...props}
     console.log('FROM HOC : ', newprops)
-    const { mdata = [], pmarket, edata = [], odata = [] } = newprops;
+    const { mdata = [], pmarket, edata = [], odata = [], marketdata = [] } = newprops;
+
+     if (marketdata.length) { // For Detail market data
+        console.log('MARKET_DATA', JSON.stringify(marketdata));
+        let new_marketdata = [];
+        marketdata.map(item => {
+            new_marketdata.push(item.data)
+            return item;
+        });
+        let sorted_marketdata = _.orderBy(new_marketdata, ['displayOrder'], 'asc');
+        console.log('jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj')
+        console.table(sorted_marketdata, ['displayOrder']);
+        let updated_marketdata = sorted_marketdata.filter(market => market.status.displayable === true);
+        
+        return {...newprops, marketdata : updated_marketdata}        
+    }
+
     if (mdata.length) { // for Primary Market data & Detail market data
         console.log('MARKET_DATA', JSON.stringify(mdata));
         let new_mdata = [];
@@ -20,10 +36,62 @@ const displayGate = (props) => {
         return {...newprops, mdata : updated_mdata}        
     }
 
+   
+
     if (edata.length) {
         // console.log('EV_DATA', JSON.stringify(edata));
         let grouped_edata=_.groupBy(edata, 'typeName');
-        console.log(JSON.stringify(grouped_edata));
+        const TYPE_NAME = Object.keys(grouped_edata)[0];
+        let grouped_linkededata=_.groupBy(edata, 'linkedEventTypeName');
+       
+        console.log('XX', grouped_edata);
+        console.log('XXX', grouped_linkededata);
+        let consolidated_edata = [];
+        consolidated_edata.push({[TYPE_NAME] : grouped_linkededata})
+        console.log('CONS', consolidated_edata)
+        let count = 0;
+        consolidated_edata.map(item => {
+            console.log('ABID', item[TYPE_NAME])
+            console.log('ABID', Object.keys(item[TYPE_NAME]));
+            Object.keys(item[TYPE_NAME]).map(it => {
+                console.log('ABID', item[TYPE_NAME][it])
+                item[TYPE_NAME][it].map((evt, index) => {
+                    console.log('CONSOL', count++);
+
+                })
+            })
+        })
+        
+        /*Object.keys(grouped_edata).map(item => {
+            console.log('XXy', grouped_edata[item]);
+            Object.keys(grouped_linkededata).map(it => {
+                console.log('XXyy', grouped_linkededata[it]);
+                grouped_linkededata[it].map(itt => {
+                    console.log('XXyyy', itt);
+                    console.log('YYYY', itt.typeName)
+                    console.log('YYYYXX', item)
+                    console.log('ALFIEEEx', grouped_edata[item])
+                    console.log('ALFIEEEy', grouped_linkededata[it])
+                    if (itt.typeName === item) {
+                        // grouped_edata[item] = grouped_linkededata[it]
+                    }
+                    return itt;
+                })
+            })
+        })
+        console.log('ADDDD', grouped_edata)*/
+          /* let updated_grouped_linkeddata = Object.keys(grouped_linkededata).map((item) => {
+            console.log('X', item)
+            if (item === "undefined") {
+                item = grouped_linkededata[item][0].typeName;
+            }
+           return item;
+        })
+      let consolidated_edata = Object.keys(grouped_edata).map(item => {
+            updated_grouped_linkeddata.filter(it => )
+            {...grouped_edata[item], }
+        });*/
+        /*console.log(JSON.stringify(grouped_edata));
         let totalgrouped_secondedata = [];
         let typeNames = Object.keys(grouped_edata).map(item => {
             //console.log(grouped_edata[item]);
@@ -36,10 +104,11 @@ const displayGate = (props) => {
             totalgrouped_secondedata.push(grouped_secondedata)
             //console.table(grouped_secondedata)
             return item;
-        })
+        })*/
 
-        console.log('XXXXX', grouped_edata)
-        console.log('XXXXXXXXXX', totalgrouped_secondedata)
+        
+        //console.log('XXXXXXX', updated_grouped_linkeddata)
+       // console.log('XXXXXXXXXX', totalgrouped_secondedata)
 
        /* Object.keys(grouped_edata).map(item => {
             grouped_edata[item].filter(it => {
@@ -49,7 +118,7 @@ const displayGate = (props) => {
         })*/
 
         let updated_edata = edata.filter((item) => item.status.displayable === true);
-        console.log('XXXX', updated_edata)
+        console.log('CONSO', updated_edata)
         return {...newprops, edata : updated_edata}       
     }
 

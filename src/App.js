@@ -11,7 +11,6 @@ class App extends Component {
     this.state = {
         username : 'Alfie',
         odssunit : constants.ODDS_DECIMAL
-        // ws : null
     } 
     this.wsUrl = "ws://192.168.99.100:8889";
   }
@@ -19,10 +18,8 @@ class App extends Component {
   setUser = (ev) => {
       ev.preventDefault();
       if (ev.target.username.value) {
-        // this.ws = new WebSocket(this.wsUrl);        
         this.setState({
             username : ev.target.username.value
-            // ws : this.ws
         })
       }
       else {
@@ -45,7 +42,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log('c o m p o n e n t   D i d M o u n t')
+    console.log('CDM_', 'App Component')
   }
 
   render() {

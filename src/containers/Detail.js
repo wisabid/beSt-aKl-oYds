@@ -5,7 +5,6 @@ import {subscribe_bao, unsubscribe_bao} from '../store/actions/'
 const mapStateToProps = (state) => {
     return {        
         eventdata : state.rL.eventdata,
-        marketdata : state.rL.marketdata,
         ondemandmarketdata : state.rL.ondemandmarketdata,
         subscriptions : state.rL.subscriptions
     }

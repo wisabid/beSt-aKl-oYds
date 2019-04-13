@@ -33,18 +33,32 @@
 }
 
 /* BAO Common Styles */
+span.anchorl {
+  color : slateblue;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
 .bao-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 20vmin;
   pointer-events: none;
 }
+.bao-spinner {
+  animation: App-logo-spin infinite 500ms linear;
+  height: 5vmin;
+  pointer-events: none;
+}
 fieldset {
   text-align: left;
   margin: 0;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  padding:0;
+  border-radius: 5px;  
   border-color: #4285f4;
+  width:100%;
+  margin-bottom: 10px;
 }
+
 fieldset legend {
   font-size: 0.7rem;
   color: #1a73e8;
@@ -90,10 +104,17 @@ ul {
 .bao-login {
   width: 40%;
 }
+.bao-login fieldset {
+  margin-bottom: 10px;
+  padding : 10px;
+}
 /* Login Comp Styles end here*/
 /* Home COmponent styles */
+fieldset.outerf {
+  margin: 5px;
+}
 .bao-live {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -105,11 +126,34 @@ ul {
   border-radius: 5px;
   border:2px solid #4285f4;
   padding:5px;
-  margin:0 10px;
+  margin:10px;
   font-size: 1.8vmin;
-  width: 100vw;
+  width: auto;
 }
 ul.noborder {
   border:none;
+}
+fieldset ul li .inrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+fieldset ul li .inrow .anchorl {
+  width: 50%
+}
+.titletext {
+  color :#000;
+  font-weight: bold;
+}
+.odds {
+  border: 1px solid slateblue;
+  border-radius: 70%;
+  padding:10px;
+}
+.oddslink {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  outline: none
 }
 /* Home COmponent styles end here */

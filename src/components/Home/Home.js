@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import UserContext from '../../context/UserContext';
-import Detail from '../../containers/Detail';
-import Market from  '../../containers/Market';
 import Event from '../../containers/Event';
+import soccer from '../../assets/images/Soccerball.svg';
+const Detail = lazy(() => import('../../containers/Detail'))
 
 class Home extends Component {
     static contextType = UserContext;
@@ -47,32 +47,38 @@ class Home extends Component {
         
     }
 
+    loadingComp = () => (<img src={soccer} className="bao-spinner" alt="logo" />);
+
           
     render() {
-        if (this.state.showdetail) {
+        const { showdetail, showpmlist } = this.state;
+        const { username } = this.context;
+        const { livedata } = this.props;
+        if (showdetail) {
             return (
-                <Detail                     
-                    goback={this.handleBack}
-                />
+                <Suspense fallback={this.loadingComp()}>
+                    <Detail                     
+                        goback={this.handleBack}
+                    />
+                </Suspense>
             )
         }
         else {
             return (
                 <>
-                    <h4>Welcome <i>{this.context.username}</i></h4>
-                    {/* <h5>Dummy Date : {this.props.dummy}</h5> */}
-                    {this.props.livedata
+                    <h4>Welcome <i>{username}</i></h4>
+                    {livedata
                         ?<><div className="bao-live">
-                                <Event edata={this.props.livedata} 
+                                <Event edata={livedata} 
                                     showDetail={this.showDetail.bind(this)}
                                     handlePM={this.handlePM.bind(this)}
-                                    showpmlist={this.state.showpmlist} 
+                                    showpmlist={showpmlist} 
                                     pmarket="true"
                                 />                            
                            </div>
                         
                         </>
-                        :<h2>Loading...</h2>                      
+                        :<img src={soccer} className="bao-spinner" alt="logo" />                    
                     }                   
                 </>
         )
@@ -85,26 +91,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        //this.props.adduser(this.context.username);
         console.log('YOUR CONTEXT', this.context);
-
-        // this.props.dummyEvent();
-        
-        /*let self = this;
-        this.context.ws.addEventListener("open", () => {
-            console.log('O p e n !')
-            this.context.ws.send(JSON.stringify({ type: "getLiveEvents", primaryMarkets: true }))
-        })
-        this.context.ws.addEventListener("message", e => {
-            console.log('You HAVE a MEssage!')
-            console.table(JSON.parse(e.data));
-            let livedata = JSON.parse(e.data)
-            if (livedata.type === "LIVE_EVENTS_DATA") {
-                self.setState({
-                    livedata : livedata.data
-                })
-            }
-        });     */ 
     }   
 }
 

@@ -12,24 +12,26 @@ const Outcome = (props) => {
                 <legend>Outcome(s)</legend>
                 <ul className="noborder">
                 {
-                    odata.map((outcome) => {
+                    odata.map((outcome, ind) => {
                         if (outcome.data.eventId === eventid && outcome.data.marketId === marketid) {
                             return ( 
                                 <>
-                                <li>
-                                    <span onClick={() => showOutcomOndemand(outcome.data.outcomeId)}><b>(O)</b>{outcome.data.name}</span>  <br />
-                                    <div>
-                                    - {outcome.data.outcomeId}
-                                    <Subscription 
-                                        uid={`o.${outcome.data.outcomeId}`}
-                                    />
-                                    <br />
-                                    ODDS <br />
+                                <li key={outcome.data.outcomeId}>
+                                <div className="inrow">
+                                    <span className="anchorl" onClick={() => showOutcomOndemand(outcome.data.outcomeId)}><b>{ind+1}</b>{outcome.data.name} -  - {outcome.data.outcomeId}</span>
+                                        <Subscription 
+                                            uid={`o.${outcome.data.outcomeId}`}
+                                        />
+                                </div>
+                                <div className="inrow">
                                     {(context.odssunit === constants.ODDS_FRACTIONAL)
-                                        ?<span onClick={context.changeOddUnit}>- {outcome.data.price.num}/{outcome.data.price.num}</span>
-                                        :<span onClick={context.changeOddUnit}>- {outcome.data.price.decimal}</span>
+                                        ?<span className="titletext odds oddslink" onClick={context.changeOddUnit}>{outcome.data.price.num}/{outcome.data.price.num}</span>
+                                        :<span className="titletext odds oddslink" onClick={context.changeOddUnit}>{outcome.data.price.decimal}</span>
                                     }
-                                    </div>
+                                </div>  
+                                    <hr />
+                                    
+                                    
                                 </li>                            
                                 </>
                             )

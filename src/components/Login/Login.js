@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useContext, useEffect } from 'react';
 import soccer from '../../assets/images/Soccerball.svg';
 import { InputEl, ButtonEl } from '../FormElement';
 import UserContext from '../../context/UserContext';
@@ -6,14 +6,16 @@ import Home from '../../containers/Home';
 
 
 const Login = () => {
-            return (
-                <UserContext.Consumer>
-                    {context => (
-                        <div className="bao-container" id={context.username}>
-                            {/* <img src={soccer} className="bao-logo" alt="logo" /> */}
-                            {!context.username
+    useEffect(() => {
+        console.log('CDM_', 'Login Component')
+    }, [])
+    const { username, setuser } = useContext(UserContext)
+            return (                
+                        <div className="bao-container" id={username}>
+                            <img src={soccer} className="bao-logo" alt="logo" />
+                            {!username
                                 ?<div className="bao-login">
-                                    <form onSubmit={context.setuser}>
+                                    <form onSubmit={setuser}>
                                         <InputEl legend="Name" elname="username" eltype="text" elplaceholder="Enter your Name"/>
                                         <ButtonEl elvalue="Go" eltype="submit"/>
                                     </form>
@@ -21,9 +23,7 @@ const Login = () => {
                                 :<Home />
                             }
                             
-                        </div>
-                    )}
-                </UserContext.Consumer>      
+                        </div>                   
             )
 }
 
