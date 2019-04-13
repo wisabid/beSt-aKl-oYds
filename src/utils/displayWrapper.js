@@ -53,10 +53,10 @@ const displayGate = (props) => {
         consolidated_edata.map(item => {
             console.log('ABID', item[TYPE_NAME])
             console.log('ABID', Object.keys(item[TYPE_NAME]));
-            Object.keys(item[TYPE_NAME]).map(it => {
+            let newArr = Object.keys(item[TYPE_NAME]).map(it => {
                 console.log('ABID', item[TYPE_NAME][it])
-                item[TYPE_NAME][it].map((evt, index) => {
-                    console.log('CONSOL', count++);
+                item[TYPE_NAME][it].map((evnt, index) => {
+                    console.log('CONSOL', evnt);
 
                 })
             })
@@ -124,7 +124,6 @@ const displayGate = (props) => {
 
     if (odata.length) {
         
-        debugger;
     }
     return newprops;
 }

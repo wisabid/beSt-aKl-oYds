@@ -1,54 +1,71 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import UserContext from '../../context/UserContext';
 import * as constants from '../../store/constants/constants';
 import Subscription from '../../containers/Subscription';
+import soccer from '../../assets/images/Soccerball.svg';
 
 const Outcome = (props) => {
-    const { odata, marketid, eventid, showOutcomOndemand, mdata } = props;
-    if (odata.length) {    
+    
+    const { odata=[], marketid, eventid, showOutcomOndemand, outcomedata=[], ondemand=false } = props;
+    const { odssunit, changeOddUnit } = useContext(UserContext);
+    useEffect(() => {
+        console.log('CDM', 'Outcome COmp', outcomedata);   
+
+    }, []);
+
+    if (outcomedata.length) {  
         return (
-            <UserContext.Consumer>{context => 
-            (<fieldset>
+            <fieldset>
                 <legend>Outcome(s)</legend>
                 <ul className="noborder">
                 {
-                    odata.map((outcome, ind) => {
+                    outcomedata.map((outcome, ind) => {
                         if (outcome.data.eventId === eventid && outcome.data.marketId === marketid) {
-                            return ( 
-                                <>
-                                <li key={outcome.data.outcomeId}>
-                                <div className="inrow">
-                                    <span className="anchorl" onClick={() => showOutcomOndemand(outcome.data.outcomeId)}><b>{ind+1}</b>{outcome.data.name} -  - {outcome.data.outcomeId}</span>
-                                        <Subscription 
-                                            uid={`o.${outcome.data.outcomeId}`}
-                                        />
-                                </div>
-                                <div className="inrow">
-                                    {(context.odssunit === constants.ODDS_FRACTIONAL)
-                                        ?<span className="titletext odds oddslink" onClick={context.changeOddUnit}>{outcome.data.price.num}/{outcome.data.price.num}</span>
-                                        :<span className="titletext odds oddslink" onClick={context.changeOddUnit}>{outcome.data.price.decimal}</span>
-                                    }
-                                </div>  
-                                    <hr />
-                                    
-                                    
-                                </li>                            
-                                </>
-                            )
+                            if (outcome.data.status.displayable) {
+                                return ( 
+                                    <>
+                                    <li key={outcome.data.outcomeId}>
+                                    <div className="inrow">
+                                        <span className="anchorl" onClick={() => showOutcomOndemand(outcome.data.outcomeId)}>- {outcome.data.name}</span>
+                                            <Subscription 
+                                                uid={`o.${outcome.data.outcomeId}`}
+                                            />
+                                    </div>
+                                    <div className="inrow odds" style={{justifyContent: "center"}}>
+                                        {(odssunit === constants.ODDS_FRACTIONAL)
+                                            ?<span className="anchorl" onClick={changeOddUnit}>{outcome.data.price.num}/{outcome.data.price.num}</span>
+                                            :<span className="anchorl" onClick={changeOddUnit}>{outcome.data.price.decimal}</span>
+                                        }
+                                    </div>  
+                                        <hr />
+                                        
+                                        
+                                    </li>                            
+                                    </>
+                                )
+                            }
+                            else if (outcome.data.status.suspended && ondemand) {
+                                return (
+                                    <li key={outcome.data.outcomeId}>
+                                        <div className="inrow odds" style={{justifyContent: "center", background:"lightgrey", color:"grey"}}>
+                                        SUSPENDED
+                                    </div> 
+                                    </li>
+                                )
+                            }
                         }
+                        
                     })
                 }
                 
             </ul>
             </fieldset>
-            )}</UserContext.Consumer>
+            
         )
     }
     else {
         return (
-            <li>
-                YET TO IMPLEMENT
-            </li>   
+            <img src={soccer} className="bao-spinner" alt="logo" />
         )
     }
 }

@@ -62,6 +62,7 @@ const LiveEvents = (state = initialState, action) => {
             }
             break;
         case 'showoutcome':
+        debugger;
             let newoutcomedata = [...state.outcomedata]
             let findOutcome = newoutcomedata.find(item => item.data.outcomeId === action.data.data.outcomeId);
             if (findOutcome) {
@@ -75,7 +76,7 @@ const LiveEvents = (state = initialState, action) => {
             else {
                 newoutcomedata.push(action.data);
             }
-            newoutcomedata = newoutcomedata.filter(item => item.data.status.displayable === true);
+            //newoutcomedata = newoutcomedata.filter(item => item.data.status.displayable === true);
             return {...newState, outcomedata : newoutcomedata};
             break;
         case 'removemarketdata':
@@ -114,7 +115,6 @@ const LiveEvents = (state = initialState, action) => {
             if (newState.marketdata.length) {
                 let newMarketdata = newState.marketdata.map(market => {
                     if (market.data.marketId === action.data.marketId) {
-                        debugger;
                         market.data.status = action.data.status;
                     }
                     return market;

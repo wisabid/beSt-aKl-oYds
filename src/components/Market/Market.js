@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Outcome from '../Outcome';
+import Outcome from '../../containers/Outcome';
 import Subscription from '../../containers/Subscription';
 import soccer from '../../assets/images/Soccerball.svg';
 
@@ -23,12 +23,13 @@ const Market = (props) => {
                         <ul className="noborder">
                             <li key={mdata[0].marketId}>
                                 <div className="inrow">
-                                    <span className="anchorl" onClick={() => showMarketOndemand(mdata[0].marketId)}>{mdata[0].marketId} - {mdata[0].name}- {mdata[0].type}</span> <br />
+                                    <span className="anchorl" onClick={() => showMarketOndemand(mdata[0].marketId)}>{mdata[0].name} ( {mdata[0].type} )</span> <br />
+                                    <span className="justtitle" title="Live Price Limit">{mdata[0].liabilities.livePriceLimit} ( LPL )</span>
                                     <Subscription 
                                         uid={`m.${mdata[0].marketId}`}
                                     />   
                                 </div>                                                              
-                                <Outcome odata={outcomedata} eventid={eventid} marketid={mdata[0].marketId} 
+                                <Outcome eventid={eventid} marketid={mdata[0].marketId} 
                                     showOutcomOndemand={(id) => showOutcomOndemand(id)}
                                     mdata={mdata[0]}   
                                 />     
@@ -51,16 +52,20 @@ const Market = (props) => {
                                     <>
                                     <li key={market.marketId}>
                                         <div className="inrow">
-                                            <b>{indx+1}. </b><span className="anchorl" onClick={() => showMarketOndemand(market.marketId)}>{market.marketId} - {market.name}- {market.type}   </span> 
+                                            <span className="anchorl" onClick={() => showMarketOndemand(market.marketId)}><b>{indx+1}. </b>{market.name} ( {market.type} )</span> 
+                                            <span className="justtitle" title="Live Price Limit">{market.liabilities.livePriceLimit} ( LPL )</span>
                                             <Subscription 
                                                 uid={`m.${market.marketId}`}
                                             />   
                                         </div>
-                                                                    
-                                        <Outcome odata={outcomedata} eventid={eventid} marketid={market.marketId} 
+                                        {market.name
+                                            ?<Outcome eventid={eventid} marketid={market.marketId} 
                                             showOutcomOndemand={(id) => showOutcomOndemand(id)}
                                             mdata={mdata}   
-                                        />     
+                                        />   
+                                            :null                                            
+                                        }                          
+                                          
 
                                     </li>                               
                                     </>
@@ -76,17 +81,24 @@ const Market = (props) => {
                                     <>
                                     <li key={market.marketId}>
                                     <div className="inrow">
-                                        <b>(M)</b><span className="anchorl" onClick={() => props.showMarketOndemandAlt(market.marketId)}>{market.marketId} -  - {market.type}   </span>                             
+                                        <span className="anchorl" onClick={() => props.showMarketOndemandAlt(market.marketId)}>{market.name?`${market.name} ( ${market.type} )`:`Market ( ${market.marketId} )`}</span>                             
+                                        <span className="justtitle" title="Live Price Limit">{market.liabilities?`${market.liabilities.livePriceLimit} ( LPL ) `:null} </span>
                                         <Subscription 
                                             uid={`m.${market.marketId}`}
                                         />
                                     </div>
                                         
-                                        
-                                    <Outcome odata={outcomedata} eventid={eventid} marketid={market.marketId} 
+                                     {market.name
+                                        ?<Outcome eventid={eventid} marketid={market.marketId} 
                                         showOutcomOndemand={(id) => showOutcomOndemand(id)}
-                                        mdata={mdata}   
-                                    />    
+                                        mdata={mdata} 
+                                        ondemand="true"  
+                                    />
+                                        :null
+
+                                     }   
+                                     <hr />
+                                        
 
                                     </li>                               
                                     </>

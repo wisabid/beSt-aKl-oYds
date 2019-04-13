@@ -15,13 +15,16 @@ const Event = (props) => {
                                 return (
                                     <li key={evnt.eventId}>
                                         <div className="inrow">
-                                            <span className="anchorl" onClick={() => showDetail(evnt.eventId)}><b>{index+1}. </b>{evnt.name}</span>
+                                            <span className="anchorl titletext" onClick={() => showDetail(evnt.eventId)}><b>{index+1}. </b>{evnt.name}</span>
                                             <span className="anchorl" onClick={() => handlePM(evnt)}>( * )</span>
-                                        
+                                            <button className="scores">{evnt.scores.home} - {evnt.scores.away}</button>
                                         <Subscription 
                                             uid={`e.${evnt.eventId}`}
                                         />   
                                         </div>   
+                                        <div className="" style={{paddingLeft: "20px",fontSize: "1.4vmin"}}>
+                                            <span style={{fontWeight:"bold", color: "grey"}}>{evnt.linkedEventTypeName?evnt.linkedEventTypeName:evnt.typeName} ( {evnt.startTime} )</span>
+                                        </div>
                                         
                                         {(showpmlist.indexOf(evnt.eventId) !== -1)
                                             ?<Market mdata={props.marketdata} eventid={evnt.eventId} pmarket={pmarket}/>
