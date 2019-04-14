@@ -3,7 +3,8 @@ import EventComp from '../components/Event';
 import displayWrapper from '../utils/displayWrapper';
 
 const mapStateToProps = (state) => {
-    return {        
+    return {
+        edata : state.rL.livedata,        
         marketdata : state.rL.marketdata
     }
 }

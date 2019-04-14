@@ -13,10 +13,12 @@ const initialState = {
 const LiveEvents = (state = initialState, action) => {
     let newState = {...state};
     console.log('SHABZ', newState)
+    debugger;
     switch(action.type) {
         case 'dummy':
             return {...newState, dummy : 'Dummy filled !'}        
         case 'showlive':
+        debugger;
             // let displayableData = action.data.data.filter((item) => item.status.displayable === true)
             return {...newState, livedata : action.data.data};
             break;

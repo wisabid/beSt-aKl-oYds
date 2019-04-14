@@ -39,6 +39,7 @@ const displayGate = (props) => {
    
 
     if (edata.length) {
+        debugger;
         // console.log('EV_DATA', JSON.stringify(edata));
         let grouped_edata=_.groupBy(edata, 'typeName');
         const TYPE_NAME = Object.keys(grouped_edata)[0];
@@ -57,7 +58,6 @@ const displayGate = (props) => {
                 console.log('ABID', item[TYPE_NAME][it])
                 item[TYPE_NAME][it].map((evnt, index) => {
                     console.log('CONSOL', evnt);
-
                 })
             })
         })
@@ -117,9 +117,9 @@ const displayGate = (props) => {
             return item;
         })*/
 
-        let updated_edata = edata.filter((item) => item.status.displayable === true);
-        console.log('CONSO', updated_edata)
-        return {...newprops, edata : updated_edata}       
+       // let updated_edata = edata.filter((item) => item.status.displayable === true);
+        // console.log('CONSO', updated_edata)
+        return {...newprops, edata : consolidated_edata}       
     }
 
     if (odata.length) {
