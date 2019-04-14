@@ -20,7 +20,7 @@ const Trial2 = (props) => {
                 <li>
                 <fieldset>
                     <legend>{item === "undefined"?TYPE_NAME:item}</legend>
-                    <ul>
+                    <ul className="noborder">
                     {e_data[item].map(evnt => {
                     return (
                         <li key={evnt.eventId}>
@@ -65,8 +65,8 @@ const Event = (props) => {
     if (edata.length) {
         console.log('LIVEDATA', edata);        
         return (
-            <fieldset className="outerf">
-                <legend>Football Live</legend>
+            <fieldset className="outerf" style={{border:"none"}}>
+                {/* <legend>Football Live</legend> */}
                     <ul className="noborder">
                       <Trial2 {...props} />                               
                     </ul>
