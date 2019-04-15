@@ -4,13 +4,15 @@ import { showOutcomes } from '../store/actions'
 
 const mapStateToProps = (state) => {
     return {        
-        outcomedata : state.rL.outcomedata
+        outcomedata : state.rL.outcomedata,
+        betslipdata : state.rL.betslipdata
     }
 }
 
 const mapdispatchToProps = (dispatch) => {
     return {
-        showOutcomes : (outcomes) => dispatch(showOutcomes(outcomes))
+        showOutcomes : (outcomes) => dispatch(showOutcomes(outcomes)),
+        addToBet : (id) => dispatch({type: 'betslip', payload : {id : id}})
     }
 }
 

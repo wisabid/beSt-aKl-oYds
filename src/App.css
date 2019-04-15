@@ -92,6 +92,24 @@ ul {
   list-style: none;
   text-align: left
 }
+.bao-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  align-items: center;
+}
+.betslip {
+  /* padding-left: 100px; */
+}
+.betslip span {
+  border-radius: 50%;
+  padding: 10px 15px;
+  /* border: 10px dashed #4285f4; */
+  outline: navajowhite;
+  margin: 0 10px;
+  background: #4285f4;
+    color: #fff;
+}
 /* BAO Common Styles end here */
 /* Login Comp Styles */
 .bao-container {

@@ -4,7 +4,7 @@ import Subscription from '../../containers/Subscription';
 import soccer from '../../assets/images/Soccerball.svg';
 import { TYPE_NAME } from '../../store/constants/constants';
 
-const Trial2 = (props) => {
+const EventDetails = (props) => {
     debugger;
     //const propsArr = [...props]
     const { edata, showDetail, handlePM, showpmlist, pmarket, subscribe_event, subscriptions } = props;
@@ -32,12 +32,18 @@ const Trial2 = (props) => {
                             uid={`e.${evnt.eventId}`}
                         />   
                         </div>   
-                        <div className="" style={{paddingLeft: "20px",fontSize: "1.4vmin"}}>
-                            <span style={{fontWeight:"bold", color: "grey"}}>{evnt.linkedEventTypeName?evnt.linkedEventTypeName:evnt.typeName} ( {evnt.startTime} )</span>
+                        <div className="" style={{fontSize: "1.4vmin"}}>
+                            <span style={{fontWeight:"bold", color: "grey"}}>( {evnt.startTime} )</span>
                         </div>
+                        {evnt.status.suspended
+                            ?<div className="inrow odds" style={{justifyContent: "center", background:"lightgrey", color:"grey"}}>
+                                SUSPENDED
+                            </div> 
+                            :null
+                        }
                         
                         {(showpmlist.indexOf(evnt.eventId) !== -1)
-                            ?<Market mdata={props.marketdata} eventid={evnt.eventId} pmarket={pmarket}/>
+                            ?<Market mdata={props.marketdata} eventid={evnt.eventId} pmarket={pmarket} typename={item}/>
                             :null
                         }
                         <hr />  
@@ -68,7 +74,7 @@ const Event = (props) => {
             <fieldset className="outerf" style={{border:"none"}}>
                 {/* <legend>Football Live</legend> */}
                     <ul className="noborder">
-                      <Trial2 {...props} />                               
+                      <EventDetails {...props} />                               
                     </ul>
             </fieldset>
         )

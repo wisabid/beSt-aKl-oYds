@@ -1,4 +1,7 @@
+import _ from 'lodash';
 import * as types from '../constants/ActionTypes';
+import { TYPE_NAME } from '../constants/constants';
+
 
 const initialState = {
     users : [],
@@ -8,7 +11,8 @@ const initialState = {
     outcomedata : [],
     eventdata : [],
     ondemandmarketdata : [],
-    subscriptions : []
+    subscriptions : [],
+    betslipdata : []
 }
 const LiveEvents = (state = initialState, action) => {
     let newState = {...state};
@@ -20,7 +24,13 @@ const LiveEvents = (state = initialState, action) => {
         case 'showlive':
         debugger;
             // let displayableData = action.data.data.filter((item) => item.status.displayable === true)
-            return {...newState, livedata : action.data.data};
+            let filteredData = action.data.data.filter(item => item.status.displayable)
+
+            let grouped_edata=_.groupBy(filteredData, 'typeName');
+            let grouped_linkededata=_.groupBy(filteredData, 'linkedEventTypeName');
+            let consolidated_edata = [];
+            consolidated_edata.push({[TYPE_NAME] : grouped_linkededata});            
+            return {...newState, livedata : consolidated_edata};
             break;
         case 'showmarket':
             let newondemandmarketdata = [...state.ondemandmarketdata]
@@ -137,6 +147,17 @@ const LiveEvents = (state = initialState, action) => {
             }
             return {...newState}
             break;
+        case 'betslip':
+            /*let bsoutcome = newState.outcomedata.filter(item => item.data.outcomeId === action.payload.id);
+            let bsmarket = newState.marketdata.filter(item => item.data.marketId === bsoutcome[0].data.marketId);
+            let bsevent = newState.livedata[0][TYPE_NAME][action.payload.typename].filter(item => item.eventId === bsmarket[0].data.eventId);
+            let betslipdata = [];
+            */
+           debugger;
+            let newbetslipdata = [...newState.betslipdata];
+            (newbetslipdata.indexOf(action.payload.id) === -1)?newbetslipdata.push(action.payload.id):newbetslipdata.splice(newbetslipdata.indexOf(action.payload.id), 1);
+    
+            return {...newState, betslipdata : newbetslipdata}
         case types.ADD_USER:
             // newState.users.push(action.user)
             return newState

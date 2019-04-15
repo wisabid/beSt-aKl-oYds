@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Market from '../../containers/Market';
 import Subscription from '../../containers/Subscription'
 import soccer from '../../assets/images/Soccerball.svg';
+import Counter from '../../containers/Counter'
 
 const Detail = (props) => {
     const { eventdata } = props;
@@ -15,6 +16,7 @@ const Detail = (props) => {
         return (
             <>
                 <h4 onClick={props.goback}> Back </h4>
+                <Counter />      
                 <div className="bao-live">
                 <fieldset className="outerf">
                     <legend>Event Detail</legend>
@@ -25,7 +27,7 @@ const Detail = (props) => {
                                         <li key={evnt.eventId}>
                                             <div className="inrow">
                                                 <span className="anchorl"><b>{index+1}. </b>{evnt.name}</span> 
-                                                <span>[{evnt.linkedEventTypeName?evnt.linkedEventTypeName:evnt.typeName}]</span>
+                                                <span style={{fontSize:"2vmin",fontWeight:"bold"}}>[ {evnt.linkedEventTypeName?evnt.linkedEventTypeName:evnt.typeName} ]</span>
                                                 <Subscription 
                                                     uid={`e.${evnt.eventId}`} 
                                             />

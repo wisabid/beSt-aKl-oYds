@@ -28,10 +28,17 @@ const Market = (props) => {
                                     <Subscription 
                                         uid={`m.${mdata[0].marketId}`}
                                     />   
-                                </div>                                                              
+                                </div>  
+                                {mdata[0].status.suspended
+                                    ?<div className="inrow odds" style={{justifyContent: "center", background:"lightgrey", color:"grey"}}>
+                                        SUSPENDED
+                                    </div> 
+                                    :null
+                                }                                                            
                                 <Outcome eventid={eventid} marketid={mdata[0].marketId} 
                                     showOutcomOndemand={(id) => showOutcomOndemand(id)}
-                                    mdata={mdata[0]}   
+                                    mdata={mdata[0]} 
+                                    typename={props.typename}  
                                 />     
 
                             </li> 

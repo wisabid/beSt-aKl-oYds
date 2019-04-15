@@ -62,5 +62,8 @@ export const handleLiveData = function* (params) {
     yield takeLatest(types.UNSUBSCRIBE_BAO, (action) => {
         params.webS.waitForConnection(() => params.webS.send(JSON.stringify(action)))    
     })
+    
+    
+    
 
 }
