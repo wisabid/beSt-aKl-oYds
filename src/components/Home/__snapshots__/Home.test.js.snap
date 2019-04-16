@@ -1,0 +1,927 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> <Home /> matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home
+    getLiveEvent={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": Array [
+              Object {
+                "Football Live": Object {
+                  "Chinese Super League": Array [
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Shanghai Shenhua",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Shandong Luneng Taishan",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": -1000,
+                      "eventId": 21249939,
+                      "linkedEventId": 21228740,
+                      "linkedEventTypeId": 10005942,
+                      "linkedEventTypeName": "Chinese Super League",
+                      "markets": Array [
+                        93649849,
+                      ],
+                      "name": "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T11:35:23.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                  ],
+                  "Singapore S League": Array [
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Home United",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Albirex Niigata FC",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249937,
+                      "linkedEventId": 21249693,
+                      "linkedEventTypeId": 10005913,
+                      "linkedEventTypeName": "Singapore S League",
+                      "markets": Array [
+                        93649011,
+                      ],
+                      "name": "Home United 0 v 1 Albirex Niigata FC",
+                      "scores": Object {
+                        "away": 1,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T11:29:23.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                  ],
+                  "Turkish Cup": Array [
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Payasspor",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Amed Sportif Faaliyetler",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249945,
+                      "linkedEventId": 21241593,
+                      "linkedEventTypeId": 10006356,
+                      "linkedEventTypeName": "Turkish Cup",
+                      "markets": Array [
+                        93650155,
+                      ],
+                      "name": "Payasspor 1 v 0 Amed Sportif Faaliyetler",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 1,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T11:59:59.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Bandirmaspor",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Çorum Belediyespor",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249949,
+                      "linkedEventId": 21241922,
+                      "linkedEventTypeId": 10006356,
+                      "linkedEventTypeName": "Turkish Cup",
+                      "markets": Array [
+                        93650016,
+                      ],
+                      "name": "Bandirmaspor 0 v 0 Çorum Belediyespor",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:29:07.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Bodrum Belediyesi Bodrumspor",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Gaskispor Gaziantep",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249951,
+                      "linkedEventId": 21241920,
+                      "linkedEventTypeId": 10006356,
+                      "linkedEventTypeName": "Turkish Cup",
+                      "markets": Array [
+                        93650079,
+                      ],
+                      "name": "Bodrum Belediyesi Bodrumspor 0 v 2 Gaskispor Gaziantep",
+                      "scores": Object {
+                        "away": 2,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:32:19.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Muglaspor",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Etimesgut Belediyespor",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249953,
+                      "linkedEventId": 21241919,
+                      "linkedEventTypeId": 10006356,
+                      "linkedEventTypeName": "Turkish Cup",
+                      "markets": Array [
+                        93650166,
+                      ],
+                      "name": "Muglaspor 0 v 1 Etimesgut Belediyespor",
+                      "scores": Object {
+                        "away": 1,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:29:18.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Kirklarelispor",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Nigde Belediyespor",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249954,
+                      "linkedEventId": 21241923,
+                      "linkedEventTypeId": 10006356,
+                      "linkedEventTypeName": "Turkish Cup",
+                      "markets": Array [
+                        93650230,
+                      ],
+                      "name": "Kirklarelispor 0 v 1 Nigde Belediyespor",
+                      "scores": Object {
+                        "away": 1,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:28:35.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                  ],
+                  "undefined": Array [
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Kuching FA",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "UKM FC",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249944,
+                      "markets": Array [
+                        93649434,
+                      ],
+                      "name": "Kuching FA 0 v 1 UKM FC",
+                      "scores": Object {
+                        "away": 1,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:16:51.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Maccabi Ironi Kiryat Ata",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Hapoel Shfaram",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249946,
+                      "markets": Array [
+                        93649360,
+                      ],
+                      "name": "Maccabi Ironi Kiryat Ata 0 v 0 Hapoel Shfaram",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:30:59.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Kaspian Qazvin",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Hef Semnan",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249950,
+                      "markets": Array [
+                        93650051,
+                      ],
+                      "name": "Kaspian Qazvin 0 v 0 Hef Semnan",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:35:47.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Terengganu FA",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Felcra FC",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249952,
+                      "markets": Array [
+                        93650072,
+                      ],
+                      "name": "Terengganu FA 0 v 0 Felcra FC",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:47:15.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "MOF FC",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Sime Darby FC",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249955,
+                      "markets": Array [
+                        93650114,
+                      ],
+                      "name": "MOF FC 0 v 0 Sime Darby FC",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:44:37.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Shahrdari Hamedan",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Khoosheh Talai",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21249956,
+                      "markets": Array [
+                        93650205,
+                      ],
+                      "name": "Shahrdari Hamedan 0 v 0 Khoosheh Talai",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:30:22.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Yeni Menemen Belediyespor",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Gençlerbirligi SK",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 100,
+                      "eventId": 21250056,
+                      "markets": Array [
+                        93745088,
+                      ],
+                      "name": "Yeni Menemen Belediyespor 0 v 1 Gençlerbirligi SK",
+                      "scores": Object {
+                        "away": 1,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:27:29.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Wigan Athletic Reserves",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Fleetwood Town Reserves",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 160,
+                      "eventId": 21249940,
+                      "markets": Array [
+                        93649215,
+                      ],
+                      "name": "Wigan Athletic Reserves 1 v 0 Fleetwood Town Reserves",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 1,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:01:10.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Barnet Reserves",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Southend United Reserves",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 160,
+                      "eventId": 21249941,
+                      "markets": Array [
+                        93649250,
+                      ],
+                      "name": "Barnet Reserves 0 v 0 Southend United Reserves",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T11:59:36.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Burton Albion (Reserves)",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Mansfield Town FC (Reserves)",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 160,
+                      "eventId": 21250047,
+                      "markets": Array [
+                        93778225,
+                      ],
+                      "name": "Burton Albion (Reserves) 0 v 3 Mansfield Town FC (Reserves)",
+                      "scores": Object {
+                        "away": 3,
+                        "home": 0,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T11:58:18.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                    Object {
+                      "boostCount": 0,
+                      "classId": 5,
+                      "className": "Football",
+                      "competitors": Array [
+                        Object {
+                          "name": "Guria Lanchkhuti U19",
+                          "position": "home",
+                        },
+                        Object {
+                          "name": "Meshakhte Tkibuli U19",
+                          "position": "away",
+                        },
+                      ],
+                      "displayOrder": 180,
+                      "eventId": 21249943,
+                      "markets": Array [
+                        93649415,
+                      ],
+                      "name": "Guria Lanchkhuti U19 2 v 0 Meshakhte Tkibuli U19",
+                      "scores": Object {
+                        "away": 0,
+                        "home": 2,
+                      },
+                      "sort": "MTCH",
+                      "startTime": "2017-09-19T12:23:47.000Z",
+                      "status": Object {
+                        "active": true,
+                        "cashoutable": true,
+                        "displayable": true,
+                        "finished": false,
+                        "live": true,
+                        "requestabet": false,
+                        "resulted": false,
+                        "started": true,
+                        "suspended": false,
+                      },
+                      "superBoostCount": 0,
+                      "typeId": 10003971,
+                      "typeName": "Football Live",
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="bao-live"
+      >
+        <Connect(Component)
+          handlePM={[Function]}
+          pmarket="true"
+          showDetail={[Function]}
+          showpmlist={Array []}
+        />
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Connect(Component)
+          handlePM={[Function]}
+          pmarket="true"
+          showDetail={[Function]}
+          showpmlist={Array []}
+        />,
+        "className": "bao-live",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "handlePM": [Function],
+          "pmarket": "true",
+          "showDetail": [Function],
+          "showpmlist": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="bao-live"
+        >
+          <Connect(Component)
+            handlePM={[Function]}
+            pmarket="true"
+            showDetail={[Function]}
+            showpmlist={Array []}
+          />
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(Component)
+            handlePM={[Function]}
+            pmarket="true"
+            showDetail={[Function]}
+            showpmlist={Array []}
+          />,
+          "className": "bao-live",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "handlePM": [Function],
+            "pmarket": "true",
+            "showDetail": [Function],
+            "showpmlist": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

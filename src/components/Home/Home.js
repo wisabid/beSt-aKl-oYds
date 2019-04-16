@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import UserContext from '../../context/UserContext';
 import Event from '../../containers/Event';
 import soccer from '../../assets/images/Soccerball.svg';
-import Counter from '../../containers/Counter'
 const Detail = lazy(() => import('../../containers/Detail'))
 
 class Home extends Component {
@@ -30,7 +29,6 @@ class Home extends Component {
     }
 
     handlePM = (evnt, edata) => {
-        debugger;
         if (this.state.showpmlist.indexOf(evnt.eventId) === -1) {
             this.setState({
                 showpmlist : [...this.state.showpmlist, evnt.eventId],
@@ -76,11 +74,6 @@ class Home extends Component {
         else {
             return (
                 <>
-                    <div className="bao-header">
-                        <h4>Welcome <i>{username}</i></h4>    
-                        <Counter />                    
-                    </div>
-                    
                     <div className="bao-live">
                                 <Event  
                                     showDetail={this.showDetail.bind(this)}
@@ -97,7 +90,6 @@ class Home extends Component {
     }
 
     componentWillMount() {
-        console.log('HOME_Com will mount')
         this.props.getLiveEvent();
     }
 

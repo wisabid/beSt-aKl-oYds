@@ -1,30 +1,26 @@
 import React, { useEffect } from 'react';
-// import Event from '../../containers/Event'
 import Market from '../../containers/Market';
 import Subscription from '../../containers/Subscription'
 import soccer from '../../assets/images/Soccerball.svg';
-import Counter from '../../containers/Counter'
 
 const Detail = (props) => {
     const { eventdata } = props;
-    console.log('ALFIEEE', eventdata)
     useEffect(() => {
-        console.log('R E A C T   H O O K S');
-    });
+        console.log('R E A C T    H O O K S');
+    }, []);
 
     if (eventdata.length) {
         return (
             <>
-                <h4 onClick={props.goback}> Back </h4>
-                <Counter />      
-                <div className="bao-live">
+                <h4 onClick={props.goback} className="backbtn"> Back </h4>
+                <div className="bao-live detailScreen">
                 <fieldset className="outerf">
                     <legend>Event Detail</legend>
                         <ul className="noborder">
                             {eventdata.length
                                 ?(eventdata.map((evnt, index) => {
                                     return (
-                                        <li key={evnt.eventId}>
+                                        <li key={evnt.eventId} className="eventLi">
                                             <div className="inrow">
                                                 <span className="anchorl"><b>{index+1}. </b>{evnt.name}</span> 
                                                 <span style={{fontSize:"2vmin",fontWeight:"bold"}}>[ {evnt.linkedEventTypeName?evnt.linkedEventTypeName:evnt.typeName} ]</span>

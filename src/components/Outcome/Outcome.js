@@ -6,7 +6,7 @@ import soccer from '../../assets/images/Soccerball.svg';
 
 const Outcome = (props) => {
     
-    const { odata=[], marketid, eventid, showOutcomOndemand, outcomedata=[], ondemand=false, addToBet } = props;
+    const { marketid, eventid, showOutcomOndemand, outcomedata=[], ondemand=false, addToBet } = props;
     const { odssunit, changeOddUnit } = useContext(UserContext);
     useEffect(() => {
         console.log('CDM', 'Outcome COmp', outcomedata);   
@@ -72,8 +72,8 @@ const Outcome = (props) => {
                                 return (
                                     <li key={outcome.data.outcomeId}>
                                         <div className="inrow odds" style={{justifyContent: "center", background:"lightgrey", color:"grey"}}>
-                                        -
-                                    </div> 
+                                            -
+                                        </div> 
                                     </li>
                                 )
                             }

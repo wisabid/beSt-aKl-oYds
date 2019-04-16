@@ -1,8 +1,9 @@
 import * as types from '../store/constants/ActionTypes';
-import { addUser, showlivedata, showOutcomes, showPrimaryMarket} from '../store/actions';
+import { showOutcomes, showPrimaryMarket} from '../store/actions';
+import { WS_URL } from '../store/constants/constants'
 
 const setupSocket = (dispatch, username) => {
-    const socket = new WebSocket("ws://192.168.99.100:8889");
+    const socket = new WebSocket(WS_URL);
     socket.onopen = () => {
         console.log('Connection is open my boy!', socket);
         //socket.send(JSON.stringify(showlivedata()))

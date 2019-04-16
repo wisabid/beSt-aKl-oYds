@@ -4,7 +4,7 @@ import Login from './containers/Login';
 import UserContext from './context/UserContext';
 import * as constants from './store/constants/constants';
 
-class App extends Component {  
+export class App extends Component {  
   
   constructor() {
     super();
@@ -12,7 +12,6 @@ class App extends Component {
         username : 'Alfie',
         odssunit : constants.ODDS_DECIMAL
     } 
-    this.wsUrl = "ws://192.168.99.100:8889";
   }
   
   setUser = (ev) => {

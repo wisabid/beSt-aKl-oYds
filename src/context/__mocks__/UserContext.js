@@ -1,8 +1,10 @@
 const contextMock = ({
     Consumer(props) {
         return props.children({
-            username : '',
-            ws : null
+            username : 'testuser',
+            setuser() {
+                return
+            }
         })
     }
 });

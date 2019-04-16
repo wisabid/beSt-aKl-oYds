@@ -1,12 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FormElement /> <ButtonEl /> should match the snapshot 1`] = `
+exports[`<Login /> <Login /> Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ButtonEl
-    eltype="button"
-    elvalue="Go"
-  />,
+  Symbol(enzyme.__unrendered__): <Login />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -19,29 +16,25 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": "Go",
-      "onClick": undefined,
-      "type": "button",
+      "children": [Function],
     },
     "ref": null,
-    "rendered": "Go",
-    "type": "button",
+    "rendered": [Function],
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "Go",
-        "onClick": undefined,
-        "type": "button",
+        "children": [Function],
       },
       "ref": null,
-      "rendered": "Go",
-      "type": "button",
+      "rendered": [Function],
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -70,15 +63,10 @@ ShallowWrapper {
 }
 `;
 
-exports[`<FormElement /> <InputEl /> should match the snapshot 1`] = `
+exports[`<Login /> <login /> Component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <InputEl
-    elname="username"
-    elplaceholder="Enter your Name"
-    eltype="text"
-    legend="Name"
-  />,
+  Symbol(enzyme.__unrendered__): <Login />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -91,97 +79,25 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <legend>
-          Name
-        </legend>,
-        <input
-          autoComplete="off"
-          id="username"
-          placeholder="Enter your Name"
-          type="text"
-        />,
-      ],
+      "children": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Name",
-        },
-        "ref": null,
-        "rendered": "Name",
-        "type": "legend",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "autoComplete": "off",
-          "id": "username",
-          "placeholder": "Enter your Name",
-          "type": "text",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-    ],
-    "type": "fieldset",
+    "rendered": [Function],
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <legend>
-            Name
-          </legend>,
-          <input
-            autoComplete="off"
-            id="username"
-            placeholder="Enter your Name"
-            type="text"
-          />,
-        ],
+        "children": [Function],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Name",
-          },
-          "ref": null,
-          "rendered": "Name",
-          "type": "legend",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "autoComplete": "off",
-            "id": "username",
-            "placeholder": "Enter your Name",
-            "type": "text",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-      ],
-      "type": "fieldset",
+      "rendered": [Function],
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

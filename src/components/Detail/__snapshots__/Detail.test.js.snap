@@ -1,0 +1,1927 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Detail /> <Detail /> component matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Detail
+    eventdata={
+      Array [
+        Object {
+          "boostCount": 0,
+          "classId": 5,
+          "className": "Football",
+          "competitors": Array [
+            Object {
+              "name": "Shanghai Shenhua",
+              "position": "home",
+            },
+            Object {
+              "name": "Shandong Luneng Taishan",
+              "position": "away",
+            },
+          ],
+          "displayOrder": -1000,
+          "eventId": 21249939,
+          "linkedEventId": 21228740,
+          "linkedEventTypeId": 10005942,
+          "linkedEventTypeName": "Chinese Super League",
+          "markets": Array [
+            93649849,
+            93649179,
+            93649150,
+            93649398,
+            93649188,
+            93649223,
+            93649220,
+            93649155,
+            93649228,
+            93649407,
+            93649353,
+            93649361,
+            93649370,
+            93649381,
+            93649390,
+            93649836,
+            93649129,
+            93649564,
+            93649573,
+            93649583,
+            93649590,
+            93768039,
+            93768040,
+            93768041,
+            93649441,
+            93649446,
+            93768043,
+            93768042,
+            93649168,
+            93649424,
+            93649173,
+            93649433,
+            93768044,
+            93649453,
+            93777894,
+            93778183,
+            93779542,
+            93779756,
+            93649749,
+            93649757,
+            93649780,
+            93649795,
+            93649800,
+            93649809,
+            93649817,
+            93649824,
+            93649262,
+            93649267,
+            93649291,
+            93649299,
+            93649138,
+            93649305,
+            93649735,
+            93649343,
+            93649461,
+            93649239,
+            93775332,
+            93649253,
+            93649258,
+            93649320,
+            93649328,
+            93775316,
+            93649764,
+            93649772,
+            93775328,
+            93649859,
+            93649468,
+            93649475,
+            93649486,
+            93649493,
+            93649500,
+            93649508,
+            93649514,
+            93649524,
+            93649532,
+            93649540,
+            93649547,
+            93649556,
+            93649334,
+            93649603,
+            93649613,
+            93649621,
+            93649630,
+            93649637,
+            93649646,
+            93649651,
+            93649662,
+            93649670,
+            93649679,
+            93649688,
+            93649694,
+            93649700,
+            93649709,
+            93649720,
+            93649727,
+            93767577,
+            93767578,
+            93767579,
+            93767580,
+            93775322,
+            93775323,
+            93775324,
+            93775325,
+            93775326,
+            93775327,
+            93775333,
+            93775334,
+            93775335,
+            93775336,
+            93775337,
+            93775338,
+            93775339,
+            93777094,
+            93777375,
+            93777385,
+            93777503,
+            93777682,
+            93649785,
+            93649830,
+            93767581,
+            93775329,
+            93775330,
+          ],
+          "name": "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+          "scores": Object {
+            "away": 0,
+            "home": 0,
+          },
+          "sort": "MTCH",
+          "startTime": "2017-09-19T11:35:23.000Z",
+          "status": Object {
+            "active": true,
+            "cashoutable": true,
+            "displayable": true,
+            "finished": false,
+            "live": true,
+            "requestabet": false,
+            "resulted": false,
+            "started": true,
+            "suspended": false,
+          },
+          "superBoostCount": 0,
+          "typeId": 10003971,
+          "typeName": "Football Live",
+        },
+      ]
+    }
+    goback={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <h4
+          className="backbtn"
+          onClick={[MockFunction]}
+        >
+           Back 
+        </h4>,
+        <div
+          className="bao-live detailScreen"
+        >
+          <fieldset
+            className="outerf"
+          >
+            <legend>
+              Event Detail
+            </legend>
+            <ul
+              className="noborder"
+            >
+              <li
+                className="eventLi"
+              >
+                <div
+                  className="inrow"
+                >
+                  <span
+                    className="anchorl"
+                  >
+                    <b>
+                      1
+                      . 
+                    </b>
+                    Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "fontSize": "2vmin",
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    [ 
+                    Chinese Super League
+                     ]
+                  </span>
+                  <Connect(Subscription)
+                    uid="e.21249939"
+                  />
+                </div>
+                <div
+                  className=""
+                  style={
+                    Object {
+                      "fontSize": "1.4vmin",
+                      "paddingLeft": "20px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "grey",
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    ( 
+                    2017-09-19T11:35:23.000Z
+                     )
+                  </span>
+                </div>
+                <div
+                  className="inrow"
+                  style={
+                    Object {
+                      "justifyContent": "space-evenly",
+                    }
+                  }
+                >
+                  <span
+                    className="justtitle"
+                  >
+                    Shanghai Shenhua
+                  </span>
+                  <span>
+                    <button
+                      className="scores"
+                    >
+                      0
+                    </button>
+                     Vs 
+                    <button
+                      className="scores"
+                    >
+                      0
+                    </button>
+                  </span>
+                  <span
+                    className="justtitle"
+                  >
+                    Shandong Luneng Taishan
+                  </span>
+                </div>
+                <Connect(Component)
+                  eventid={21249939}
+                  ondmdata={Array []}
+                />
+              </li>
+            </ul>
+          </fieldset>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Back ",
+          "className": "backbtn",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": " Back ",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <fieldset
+            className="outerf"
+          >
+            <legend>
+              Event Detail
+            </legend>
+            <ul
+              className="noborder"
+            >
+              <li
+                className="eventLi"
+              >
+                <div
+                  className="inrow"
+                >
+                  <span
+                    className="anchorl"
+                  >
+                    <b>
+                      1
+                      . 
+                    </b>
+                    Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "fontSize": "2vmin",
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    [ 
+                    Chinese Super League
+                     ]
+                  </span>
+                  <Connect(Subscription)
+                    uid="e.21249939"
+                  />
+                </div>
+                <div
+                  className=""
+                  style={
+                    Object {
+                      "fontSize": "1.4vmin",
+                      "paddingLeft": "20px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "grey",
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    ( 
+                    2017-09-19T11:35:23.000Z
+                     )
+                  </span>
+                </div>
+                <div
+                  className="inrow"
+                  style={
+                    Object {
+                      "justifyContent": "space-evenly",
+                    }
+                  }
+                >
+                  <span
+                    className="justtitle"
+                  >
+                    Shanghai Shenhua
+                  </span>
+                  <span>
+                    <button
+                      className="scores"
+                    >
+                      0
+                    </button>
+                     Vs 
+                    <button
+                      className="scores"
+                    >
+                      0
+                    </button>
+                  </span>
+                  <span
+                    className="justtitle"
+                  >
+                    Shandong Luneng Taishan
+                  </span>
+                </div>
+                <Connect(Component)
+                  eventid={21249939}
+                  ondmdata={Array []}
+                />
+              </li>
+            </ul>
+          </fieldset>,
+          "className": "bao-live detailScreen",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <legend>
+                Event Detail
+              </legend>,
+              <ul
+                className="noborder"
+              >
+                <li
+                  className="eventLi"
+                >
+                  <div
+                    className="inrow"
+                  >
+                    <span
+                      className="anchorl"
+                    >
+                      <b>
+                        1
+                        . 
+                      </b>
+                      Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "fontSize": "2vmin",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      [ 
+                      Chinese Super League
+                       ]
+                    </span>
+                    <Connect(Subscription)
+                      uid="e.21249939"
+                    />
+                  </div>
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "fontSize": "1.4vmin",
+                        "paddingLeft": "20px",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "grey",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      ( 
+                      2017-09-19T11:35:23.000Z
+                       )
+                    </span>
+                  </div>
+                  <div
+                    className="inrow"
+                    style={
+                      Object {
+                        "justifyContent": "space-evenly",
+                      }
+                    }
+                  >
+                    <span
+                      className="justtitle"
+                    >
+                      Shanghai Shenhua
+                    </span>
+                    <span>
+                      <button
+                        className="scores"
+                      >
+                        0
+                      </button>
+                       Vs 
+                      <button
+                        className="scores"
+                      >
+                        0
+                      </button>
+                    </span>
+                    <span
+                      className="justtitle"
+                    >
+                      Shandong Luneng Taishan
+                    </span>
+                  </div>
+                  <Connect(Component)
+                    eventid={21249939}
+                    ondmdata={Array []}
+                  />
+                </li>
+              </ul>,
+            ],
+            "className": "outerf",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Event Detail",
+              },
+              "ref": null,
+              "rendered": "Event Detail",
+              "type": "legend",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="eventLi"
+                  >
+                    <div
+                      className="inrow"
+                    >
+                      <span
+                        className="anchorl"
+                      >
+                        <b>
+                          1
+                          . 
+                        </b>
+                        Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "fontSize": "2vmin",
+                            "fontWeight": "bold",
+                          }
+                        }
+                      >
+                        [ 
+                        Chinese Super League
+                         ]
+                      </span>
+                      <Connect(Subscription)
+                        uid="e.21249939"
+                      />
+                    </div>
+                    <div
+                      className=""
+                      style={
+                        Object {
+                          "fontSize": "1.4vmin",
+                          "paddingLeft": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "grey",
+                            "fontWeight": "bold",
+                          }
+                        }
+                      >
+                        ( 
+                        2017-09-19T11:35:23.000Z
+                         )
+                      </span>
+                    </div>
+                    <div
+                      className="inrow"
+                      style={
+                        Object {
+                          "justifyContent": "space-evenly",
+                        }
+                      }
+                    >
+                      <span
+                        className="justtitle"
+                      >
+                        Shanghai Shenhua
+                      </span>
+                      <span>
+                        <button
+                          className="scores"
+                        >
+                          0
+                        </button>
+                         Vs 
+                        <button
+                          className="scores"
+                        >
+                          0
+                        </button>
+                      </span>
+                      <span
+                        className="justtitle"
+                      >
+                        Shandong Luneng Taishan
+                      </span>
+                    </div>
+                    <Connect(Component)
+                      eventid={21249939}
+                      ondmdata={Array []}
+                    />
+                  </li>,
+                ],
+                "className": "noborder",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "21249939",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="inrow"
+                      >
+                        <span
+                          className="anchorl"
+                        >
+                          <b>
+                            1
+                            . 
+                          </b>
+                          Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "fontSize": "2vmin",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          [ 
+                          Chinese Super League
+                           ]
+                        </span>
+                        <Connect(Subscription)
+                          uid="e.21249939"
+                        />
+                      </div>,
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "fontSize": "1.4vmin",
+                            "paddingLeft": "20px",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "grey",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          ( 
+                          2017-09-19T11:35:23.000Z
+                           )
+                        </span>
+                      </div>,
+                      <div
+                        className="inrow"
+                        style={
+                          Object {
+                            "justifyContent": "space-evenly",
+                          }
+                        }
+                      >
+                        <span
+                          className="justtitle"
+                        >
+                          Shanghai Shenhua
+                        </span>
+                        <span>
+                          <button
+                            className="scores"
+                          >
+                            0
+                          </button>
+                           Vs 
+                          <button
+                            className="scores"
+                          >
+                            0
+                          </button>
+                        </span>
+                        <span
+                          className="justtitle"
+                        >
+                          Shandong Luneng Taishan
+                        </span>
+                      </div>,
+                      <Connect(Component)
+                        eventid={21249939}
+                        ondmdata={Array []}
+                      />,
+                    ],
+                    "className": "eventLi",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="anchorl"
+                          >
+                            <b>
+                              1
+                              . 
+                            </b>
+                            Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                          </span>,
+                          <span
+                            style={
+                              Object {
+                                "fontSize": "2vmin",
+                                "fontWeight": "bold",
+                              }
+                            }
+                          >
+                            [ 
+                            Chinese Super League
+                             ]
+                          </span>,
+                          <Connect(Subscription)
+                            uid="e.21249939"
+                          />,
+                        ],
+                        "className": "inrow",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <b>
+                                1
+                                . 
+                              </b>,
+                              "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+                            ],
+                            "className": "anchorl",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  1,
+                                  ". ",
+                                ],
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                1,
+                                ". ",
+                              ],
+                              "type": "b",
+                            },
+                            "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "[ ",
+                              "Chinese Super League",
+                              " ]",
+                            ],
+                            "style": Object {
+                              "fontSize": "2vmin",
+                              "fontWeight": "bold",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "[ ",
+                            "Chinese Super League",
+                            " ]",
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "uid": "e.21249939",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <span
+                          style={
+                            Object {
+                              "color": "grey",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          ( 
+                          2017-09-19T11:35:23.000Z
+                           )
+                        </span>,
+                        "className": "",
+                        "style": Object {
+                          "fontSize": "1.4vmin",
+                          "paddingLeft": "20px",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "( ",
+                            "2017-09-19T11:35:23.000Z",
+                            " )",
+                          ],
+                          "style": Object {
+                            "color": "grey",
+                            "fontWeight": "bold",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "( ",
+                          "2017-09-19T11:35:23.000Z",
+                          " )",
+                        ],
+                        "type": "span",
+                      },
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="justtitle"
+                          >
+                            Shanghai Shenhua
+                          </span>,
+                          <span>
+                            <button
+                              className="scores"
+                            >
+                              0
+                            </button>
+                             Vs 
+                            <button
+                              className="scores"
+                            >
+                              0
+                            </button>
+                          </span>,
+                          <span
+                            className="justtitle"
+                          >
+                            Shandong Luneng Taishan
+                          </span>,
+                        ],
+                        "className": "inrow",
+                        "style": Object {
+                          "justifyContent": "space-evenly",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Shanghai Shenhua",
+                            "className": "justtitle",
+                          },
+                          "ref": null,
+                          "rendered": "Shanghai Shenhua",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <button
+                                className="scores"
+                              >
+                                0
+                              </button>,
+                              " Vs ",
+                              <button
+                                className="scores"
+                              >
+                                0
+                              </button>,
+                            ],
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": 0,
+                                "className": "scores",
+                              },
+                              "ref": null,
+                              "rendered": 0,
+                              "type": "button",
+                            },
+                            " Vs ",
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": 0,
+                                "className": "scores",
+                              },
+                              "ref": null,
+                              "rendered": 0,
+                              "type": "button",
+                            },
+                          ],
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Shandong Luneng Taishan",
+                            "className": "justtitle",
+                          },
+                          "ref": null,
+                          "rendered": "Shandong Luneng Taishan",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "eventid": 21249939,
+                        "ondmdata": Array [],
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "fieldset",
+        },
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <h4
+            className="backbtn"
+            onClick={[MockFunction]}
+          >
+             Back 
+          </h4>,
+          <div
+            className="bao-live detailScreen"
+          >
+            <fieldset
+              className="outerf"
+            >
+              <legend>
+                Event Detail
+              </legend>
+              <ul
+                className="noborder"
+              >
+                <li
+                  className="eventLi"
+                >
+                  <div
+                    className="inrow"
+                  >
+                    <span
+                      className="anchorl"
+                    >
+                      <b>
+                        1
+                        . 
+                      </b>
+                      Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "fontSize": "2vmin",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      [ 
+                      Chinese Super League
+                       ]
+                    </span>
+                    <Connect(Subscription)
+                      uid="e.21249939"
+                    />
+                  </div>
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "fontSize": "1.4vmin",
+                        "paddingLeft": "20px",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "grey",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      ( 
+                      2017-09-19T11:35:23.000Z
+                       )
+                    </span>
+                  </div>
+                  <div
+                    className="inrow"
+                    style={
+                      Object {
+                        "justifyContent": "space-evenly",
+                      }
+                    }
+                  >
+                    <span
+                      className="justtitle"
+                    >
+                      Shanghai Shenhua
+                    </span>
+                    <span>
+                      <button
+                        className="scores"
+                      >
+                        0
+                      </button>
+                       Vs 
+                      <button
+                        className="scores"
+                      >
+                        0
+                      </button>
+                    </span>
+                    <span
+                      className="justtitle"
+                    >
+                      Shandong Luneng Taishan
+                    </span>
+                  </div>
+                  <Connect(Component)
+                    eventid={21249939}
+                    ondmdata={Array []}
+                  />
+                </li>
+              </ul>
+            </fieldset>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Back ",
+            "className": "backbtn",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": " Back ",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <fieldset
+              className="outerf"
+            >
+              <legend>
+                Event Detail
+              </legend>
+              <ul
+                className="noborder"
+              >
+                <li
+                  className="eventLi"
+                >
+                  <div
+                    className="inrow"
+                  >
+                    <span
+                      className="anchorl"
+                    >
+                      <b>
+                        1
+                        . 
+                      </b>
+                      Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "fontSize": "2vmin",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      [ 
+                      Chinese Super League
+                       ]
+                    </span>
+                    <Connect(Subscription)
+                      uid="e.21249939"
+                    />
+                  </div>
+                  <div
+                    className=""
+                    style={
+                      Object {
+                        "fontSize": "1.4vmin",
+                        "paddingLeft": "20px",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "grey",
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      ( 
+                      2017-09-19T11:35:23.000Z
+                       )
+                    </span>
+                  </div>
+                  <div
+                    className="inrow"
+                    style={
+                      Object {
+                        "justifyContent": "space-evenly",
+                      }
+                    }
+                  >
+                    <span
+                      className="justtitle"
+                    >
+                      Shanghai Shenhua
+                    </span>
+                    <span>
+                      <button
+                        className="scores"
+                      >
+                        0
+                      </button>
+                       Vs 
+                      <button
+                        className="scores"
+                      >
+                        0
+                      </button>
+                    </span>
+                    <span
+                      className="justtitle"
+                    >
+                      Shandong Luneng Taishan
+                    </span>
+                  </div>
+                  <Connect(Component)
+                    eventid={21249939}
+                    ondmdata={Array []}
+                  />
+                </li>
+              </ul>
+            </fieldset>,
+            "className": "bao-live detailScreen",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <legend>
+                  Event Detail
+                </legend>,
+                <ul
+                  className="noborder"
+                >
+                  <li
+                    className="eventLi"
+                  >
+                    <div
+                      className="inrow"
+                    >
+                      <span
+                        className="anchorl"
+                      >
+                        <b>
+                          1
+                          . 
+                        </b>
+                        Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "fontSize": "2vmin",
+                            "fontWeight": "bold",
+                          }
+                        }
+                      >
+                        [ 
+                        Chinese Super League
+                         ]
+                      </span>
+                      <Connect(Subscription)
+                        uid="e.21249939"
+                      />
+                    </div>
+                    <div
+                      className=""
+                      style={
+                        Object {
+                          "fontSize": "1.4vmin",
+                          "paddingLeft": "20px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "grey",
+                            "fontWeight": "bold",
+                          }
+                        }
+                      >
+                        ( 
+                        2017-09-19T11:35:23.000Z
+                         )
+                      </span>
+                    </div>
+                    <div
+                      className="inrow"
+                      style={
+                        Object {
+                          "justifyContent": "space-evenly",
+                        }
+                      }
+                    >
+                      <span
+                        className="justtitle"
+                      >
+                        Shanghai Shenhua
+                      </span>
+                      <span>
+                        <button
+                          className="scores"
+                        >
+                          0
+                        </button>
+                         Vs 
+                        <button
+                          className="scores"
+                        >
+                          0
+                        </button>
+                      </span>
+                      <span
+                        className="justtitle"
+                      >
+                        Shandong Luneng Taishan
+                      </span>
+                    </div>
+                    <Connect(Component)
+                      eventid={21249939}
+                      ondmdata={Array []}
+                    />
+                  </li>
+                </ul>,
+              ],
+              "className": "outerf",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Event Detail",
+                },
+                "ref": null,
+                "rendered": "Event Detail",
+                "type": "legend",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li
+                      className="eventLi"
+                    >
+                      <div
+                        className="inrow"
+                      >
+                        <span
+                          className="anchorl"
+                        >
+                          <b>
+                            1
+                            . 
+                          </b>
+                          Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "fontSize": "2vmin",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          [ 
+                          Chinese Super League
+                           ]
+                        </span>
+                        <Connect(Subscription)
+                          uid="e.21249939"
+                        />
+                      </div>
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "fontSize": "1.4vmin",
+                            "paddingLeft": "20px",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "grey",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          ( 
+                          2017-09-19T11:35:23.000Z
+                           )
+                        </span>
+                      </div>
+                      <div
+                        className="inrow"
+                        style={
+                          Object {
+                            "justifyContent": "space-evenly",
+                          }
+                        }
+                      >
+                        <span
+                          className="justtitle"
+                        >
+                          Shanghai Shenhua
+                        </span>
+                        <span>
+                          <button
+                            className="scores"
+                          >
+                            0
+                          </button>
+                           Vs 
+                          <button
+                            className="scores"
+                          >
+                            0
+                          </button>
+                        </span>
+                        <span
+                          className="justtitle"
+                        >
+                          Shandong Luneng Taishan
+                        </span>
+                      </div>
+                      <Connect(Component)
+                        eventid={21249939}
+                        ondmdata={Array []}
+                      />
+                    </li>,
+                  ],
+                  "className": "noborder",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "21249939",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div
+                          className="inrow"
+                        >
+                          <span
+                            className="anchorl"
+                          >
+                            <b>
+                              1
+                              . 
+                            </b>
+                            Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                          </span>
+                          <span
+                            style={
+                              Object {
+                                "fontSize": "2vmin",
+                                "fontWeight": "bold",
+                              }
+                            }
+                          >
+                            [ 
+                            Chinese Super League
+                             ]
+                          </span>
+                          <Connect(Subscription)
+                            uid="e.21249939"
+                          />
+                        </div>,
+                        <div
+                          className=""
+                          style={
+                            Object {
+                              "fontSize": "1.4vmin",
+                              "paddingLeft": "20px",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "color": "grey",
+                                "fontWeight": "bold",
+                              }
+                            }
+                          >
+                            ( 
+                            2017-09-19T11:35:23.000Z
+                             )
+                          </span>
+                        </div>,
+                        <div
+                          className="inrow"
+                          style={
+                            Object {
+                              "justifyContent": "space-evenly",
+                            }
+                          }
+                        >
+                          <span
+                            className="justtitle"
+                          >
+                            Shanghai Shenhua
+                          </span>
+                          <span>
+                            <button
+                              className="scores"
+                            >
+                              0
+                            </button>
+                             Vs 
+                            <button
+                              className="scores"
+                            >
+                              0
+                            </button>
+                          </span>
+                          <span
+                            className="justtitle"
+                          >
+                            Shandong Luneng Taishan
+                          </span>
+                        </div>,
+                        <Connect(Component)
+                          eventid={21249939}
+                          ondmdata={Array []}
+                        />,
+                      ],
+                      "className": "eventLi",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <span
+                              className="anchorl"
+                            >
+                              <b>
+                                1
+                                . 
+                              </b>
+                              Shanghai Shenhua 0 v 0 Shandong Luneng Taishan
+                            </span>,
+                            <span
+                              style={
+                                Object {
+                                  "fontSize": "2vmin",
+                                  "fontWeight": "bold",
+                                }
+                              }
+                            >
+                              [ 
+                              Chinese Super League
+                               ]
+                            </span>,
+                            <Connect(Subscription)
+                              uid="e.21249939"
+                            />,
+                          ],
+                          "className": "inrow",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <b>
+                                  1
+                                  . 
+                                </b>,
+                                "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+                              ],
+                              "className": "anchorl",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": Array [
+                                    1,
+                                    ". ",
+                                  ],
+                                },
+                                "ref": null,
+                                "rendered": Array [
+                                  1,
+                                  ". ",
+                                ],
+                                "type": "b",
+                              },
+                              "Shanghai Shenhua 0 v 0 Shandong Luneng Taishan",
+                            ],
+                            "type": "span",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                "[ ",
+                                "Chinese Super League",
+                                " ]",
+                              ],
+                              "style": Object {
+                                "fontSize": "2vmin",
+                                "fontWeight": "bold",
+                              },
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "[ ",
+                              "Chinese Super League",
+                              " ]",
+                            ],
+                            "type": "span",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "uid": "e.21249939",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <span
+                            style={
+                              Object {
+                                "color": "grey",
+                                "fontWeight": "bold",
+                              }
+                            }
+                          >
+                            ( 
+                            2017-09-19T11:35:23.000Z
+                             )
+                          </span>,
+                          "className": "",
+                          "style": Object {
+                            "fontSize": "1.4vmin",
+                            "paddingLeft": "20px",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              "( ",
+                              "2017-09-19T11:35:23.000Z",
+                              " )",
+                            ],
+                            "style": Object {
+                              "color": "grey",
+                              "fontWeight": "bold",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            "( ",
+                            "2017-09-19T11:35:23.000Z",
+                            " )",
+                          ],
+                          "type": "span",
+                        },
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <span
+                              className="justtitle"
+                            >
+                              Shanghai Shenhua
+                            </span>,
+                            <span>
+                              <button
+                                className="scores"
+                              >
+                                0
+                              </button>
+                               Vs 
+                              <button
+                                className="scores"
+                              >
+                                0
+                              </button>
+                            </span>,
+                            <span
+                              className="justtitle"
+                            >
+                              Shandong Luneng Taishan
+                            </span>,
+                          ],
+                          "className": "inrow",
+                          "style": Object {
+                            "justifyContent": "space-evenly",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Shanghai Shenhua",
+                              "className": "justtitle",
+                            },
+                            "ref": null,
+                            "rendered": "Shanghai Shenhua",
+                            "type": "span",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <button
+                                  className="scores"
+                                >
+                                  0
+                                </button>,
+                                " Vs ",
+                                <button
+                                  className="scores"
+                                >
+                                  0
+                                </button>,
+                              ],
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 0,
+                                  "className": "scores",
+                                },
+                                "ref": null,
+                                "rendered": 0,
+                                "type": "button",
+                              },
+                              " Vs ",
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 0,
+                                  "className": "scores",
+                                },
+                                "ref": null,
+                                "rendered": 0,
+                                "type": "button",
+                              },
+                            ],
+                            "type": "span",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Shandong Luneng Taishan",
+                              "className": "justtitle",
+                            },
+                            "ref": null,
+                            "rendered": "Shandong Luneng Taishan",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "eventid": 21249939,
+                          "ondmdata": Array [],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+            ],
+            "type": "fieldset",
+          },
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -11,14 +11,12 @@ const Market = (props) => {
            showmarkets(markets);            
         }
     }, []);
-    if (marketdata.length && !pmarket) {
-        //mdata = [...marketdata];
-    }
+    
     if (mdata.length || marketdata.length) {
         console.log('MARKETTT', marketdata)
         if (pmarket) {        
                 return (
-                    <fieldset>
+                    <fieldset className="primary-market">
                         <legend>Primary Market</legend>
                         <ul className="noborder">
                             <li key={mdata[0].marketId}>
