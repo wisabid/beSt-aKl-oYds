@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MarketTypes /> <MarketTypes /> component matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MarketTypes
+    dta={Array []}
+    goback={[MockFunction]}
+    marketdata={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <button
+          className="backbtn anchorl"
+          onClick={[MockFunction]}
+        >
+           Home 
+        </button>,
+        <div
+          className="bao-live"
+        >
+          <fieldset>
+            <legend>
+              Category Based Market(s) Display
+            </legend>
+            <ul
+              className="noborder"
+            />
+          </fieldset>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Home ",
+          "className": "backbtn anchorl",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": " Home ",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <fieldset>
+            <legend>
+              Category Based Market(s) Display
+            </legend>
+            <ul
+              className="noborder"
+            />
+          </fieldset>,
+          "className": "bao-live",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <legend>
+                Category Based Market(s) Display
+              </legend>,
+              <ul
+                className="noborder"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Category Based Market(s) Display",
+              },
+              "ref": null,
+              "rendered": "Category Based Market(s) Display",
+              "type": "legend",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [],
+                "className": "noborder",
+              },
+              "ref": null,
+              "rendered": Array [],
+              "type": "ul",
+            },
+          ],
+          "type": "fieldset",
+        },
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <button
+            className="backbtn anchorl"
+            onClick={[MockFunction]}
+          >
+             Home 
+          </button>,
+          <div
+            className="bao-live"
+          >
+            <fieldset>
+              <legend>
+                Category Based Market(s) Display
+              </legend>
+              <ul
+                className="noborder"
+              />
+            </fieldset>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Home ",
+            "className": "backbtn anchorl",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": " Home ",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <fieldset>
+              <legend>
+                Category Based Market(s) Display
+              </legend>
+              <ul
+                className="noborder"
+              />
+            </fieldset>,
+            "className": "bao-live",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <legend>
+                  Category Based Market(s) Display
+                </legend>,
+                <ul
+                  className="noborder"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Category Based Market(s) Display",
+                },
+                "ref": null,
+                "rendered": "Category Based Market(s) Display",
+                "type": "legend",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [],
+                  "className": "noborder",
+                },
+                "ref": null,
+                "rendered": Array [],
+                "type": "ul",
+              },
+            ],
+            "type": "fieldset",
+          },
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
