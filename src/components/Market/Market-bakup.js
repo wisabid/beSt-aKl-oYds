@@ -5,7 +5,6 @@ const Market = (props) => {
     const { mdata, eventid, outcomedata, showOutcomOndemand, showMarketOndemand } = props;
 
     useEffect(() => {
-        console.log(' C  o m ppppppp! DID Mount! Shabz');
     }, [])
 
     return (

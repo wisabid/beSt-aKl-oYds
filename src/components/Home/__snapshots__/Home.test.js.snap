@@ -789,6 +789,7 @@ ShallowWrapper {
         ],
       }
     }
+    marketTypes={Array []}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

@@ -6,7 +6,6 @@ import soccer from '../../assets/images/Soccerball.svg';
 function marketreducer(state, action) {
     switch(action.type) {
         case 'mtype':
-        debugger;
             return {...state};
             break;
         default : 
@@ -19,7 +18,6 @@ const Market = (props) => {
     const { mdata=[], eventid, outcomedata, showOutcomOndemand, showMarketOndemand, pmarket, ondmdata, subscriptions, markets=[], showmarkets, marketdata=[] } = props;
     const [ state, dispatch ] = useReducer(marketreducer, []);
     useEffect(() => {
-        console.log('CDM_', 'Market Component', markets);
         if (mdata.length === 0 && markets.length) {
            showmarkets(markets);            
         }
@@ -28,7 +26,6 @@ const Market = (props) => {
         //mdata = [...marketdata];
     }
     if (mdata.length || marketdata.length) {
-        console.log('MARKETTT', marketdata)
         if (pmarket) {        
                 return (
                     <fieldset>

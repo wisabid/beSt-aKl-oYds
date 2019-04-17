@@ -190,12 +190,12 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <h4
+        <button
           className="backbtn"
           onClick={[MockFunction]}
         >
            Back 
-        </h4>,
+        </button>,
         <div
           className="bao-live detailScreen"
         >
@@ -316,7 +316,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": " Back ",
-        "type": "h4",
+        "type": "button",
       },
       Object {
         "instance": null,
@@ -1048,12 +1048,12 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <h4
+          <button
             className="backbtn"
             onClick={[MockFunction]}
           >
              Back 
-          </h4>,
+          </button>,
           <div
             className="bao-live detailScreen"
           >
@@ -1174,7 +1174,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": " Back ",
-          "type": "h4",
+          "type": "button",
         },
         Object {
           "instance": null,

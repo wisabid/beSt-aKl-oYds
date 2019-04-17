@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Counter = ({betslipdata, subscriptions}) => {
+const Counter = ({betslipdata, subscriptions, showbetslip}) => {
     return (
         <div className="betslip">
             <span className="anchorl" title="Bet Slip">{betslipdata.length}</span>

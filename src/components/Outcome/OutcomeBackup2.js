@@ -7,7 +7,6 @@ const Outcome = (props) => {
     const { outcomes, outcomedata, marketid, eventid, showOutcomOndemand, mdata } = props;
 
     useEffect(() => {
-            console.log(' C O M P DID M O U N T', props.outcomes)
             props.showOutcomes(props.outcomes)
     }, []); // passing an empty array as second argument triggers the callback in useEffect only after the initial render thus replicating `componentDidMount` lifecycle behaviour
 
@@ -17,8 +16,6 @@ const Outcome = (props) => {
             all.push({outcomeId: item})
             return all
         }, []);
-        console.log('NEW OUTCOMES', newoutcomes)
-        console.log('o o ',outcomedata);
         let outcomes_data;
         if (outcomedata.length) {
             outcomes_data = newoutcomes.map((outcome) => {
@@ -32,7 +29,6 @@ const Outcome = (props) => {
         else {
             outcomes_data = outcomes;
         }
-        console.log('U U ', outcomes_data)
         return (
             <UserContext.Consumer>{context => 
             (<ul >

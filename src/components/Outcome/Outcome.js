@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useEffect, useContext } from 'react';
 import UserContext from '../../context/UserContext';
 import * as constants from '../../store/constants/constants';
 import Subscription from '../../containers/Subscription';
@@ -6,18 +6,18 @@ import soccer from '../../assets/images/Soccerball.svg';
 
 const Outcome = (props) => {
     
-    const { marketid, eventid, showOutcomOndemand, outcomedata=[], ondemand=false, addToBet } = props;
+    const { marketid, eventid, showOutcomOndemand, outcomedata=[], addToBet } = props;
     const { odssunit, changeOddUnit } = useContext(UserContext);
     useEffect(() => {
-        console.log('CDM', 'Outcome COmp', outcomedata);   
 
     }, []);
 
     if (outcomedata.length) {  
+        let keyid = Date.now();
         return (
-            <fieldset>
+            <fieldset key={`fs_outcome_${eventid}${keyid}`}>
                 <legend>Outcome(s)</legend>
-                <ul className="noborder">
+                <ul key={`ul_outcome_${eventid}${keyid}`} className="noborder">
                 {
                     outcomedata.map((outcome, ind) => {
                         if (outcome.data.eventId === eventid && outcome.data.marketId === marketid) {
@@ -78,7 +78,6 @@ const Outcome = (props) => {
                                 )
                             }
                         }
-                        
                     })
                 }
                 

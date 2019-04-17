@@ -9,7 +9,7 @@ describe('<Home />', () => {
     const clickFn = jest.fn(() => {
         return data;
     });
-    const HomeComp = shallow(<Home getLiveEvent={clickFn}/>)
+    const HomeComp = shallow(<Home getLiveEvent={clickFn} marketTypes={[]}/>)
 
 
     it('<Home /> matches the snapshot', () => {

@@ -791,7 +791,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": undefined,
+    "key": "fs_1555526203516",
     "nodeType": "host",
     "props": Object {
       "children": <ul
@@ -1583,7 +1583,7 @@ ShallowWrapper {
     "ref": null,
     "rendered": Object {
       "instance": null,
-      "key": undefined,
+      "key": "ul_1555526203516",
       "nodeType": "host",
       "props": Object {
         "children": <EventDetails
@@ -3156,7 +3156,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": undefined,
+      "key": "fs_1555526203516",
       "nodeType": "host",
       "props": Object {
         "children": <ul
@@ -3948,7 +3948,7 @@ ShallowWrapper {
       "ref": null,
       "rendered": Object {
         "instance": null,
-        "key": undefined,
+        "key": "ul_1555526203516",
         "nodeType": "host",
         "props": Object {
           "children": <EventDetails

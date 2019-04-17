@@ -7,7 +7,6 @@ const Outcome = (props) => {
     const { odata, marketid, eventid, showOutcomOndemand, mdata } = props;
 
     useEffect(() => {
-            console.log(' C O M P DID M O U N T', props.outcomes)
             props.showOutcomes(props.outcomes)
     }, []); // passing an empty array as second argument triggers the callback in useEffect only after the initial render thus replicating `componentDidMount` lifecycle behaviour
 

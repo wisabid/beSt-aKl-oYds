@@ -12,26 +12,22 @@ const initialState = {
     eventdata : [],
     ondemandmarketdata : [],
     subscriptions : [],
-    betslipdata : []
+    betslipdata : [],
+    marketTypes : []
 }
 const LiveEvents = (state = initialState, action) => {
     let newState = {...state};
-    console.log('SHABZ', newState)
-    debugger;
     switch(action.type) {
         case 'dummy':
             return {...newState, dummy : 'Dummy filled !'}        
         case 'showlive':
-        debugger;
             // let displayableData = action.data.data.filter((item) => item.status.displayable === true)
             let filteredData = action.data.data.filter(item => item.status.displayable)
 
-            let grouped_edata=_.groupBy(filteredData, 'typeName');
             let grouped_linkededata=_.groupBy(filteredData, 'linkedEventTypeName');
             let consolidated_edata = [];
             consolidated_edata.push({[TYPE_NAME] : grouped_linkededata});            
             return {...newState, livedata : consolidated_edata};
-            break;
         case 'showmarket':
             let newondemandmarketdata = [...state.ondemandmarketdata]
             let findMarketinOND = newondemandmarketdata.filter(item => item.marketId === action.data.data.marketId);
@@ -62,7 +58,8 @@ const LiveEvents = (state = initialState, action) => {
                             item = action.data;
                         }
                         return item;
-                    });                
+                    });  
+                    return {...newState, marketdata : updatedMarketdata}           
                 }
                 else {
                     newmarketdata.push(action.data);
@@ -72,9 +69,7 @@ const LiveEvents = (state = initialState, action) => {
                 
                 return {...newState, marketdata : newmarketdata, ondemandmarketdata : newondemandmarketdata};
             }
-            break;
         case 'showoutcome':
-        debugger;
             let newoutcomedata = [...state.outcomedata]
             let findOutcome = newoutcomedata.find(item => item.data.outcomeId === action.data.data.outcomeId);
             if (findOutcome) {
@@ -83,33 +78,28 @@ const LiveEvents = (state = initialState, action) => {
                         item = action.data;
                     }
                     return item;
-                });                
+                });  
+                return {...newState, outcomedata : updatedOutcomedata}               
             }
             else {
                 newoutcomedata.push(action.data);
             }
             //newoutcomedata = newoutcomedata.filter(item => item.data.status.displayable === true);
             return {...newState, outcomedata : newoutcomedata};
-            break;
         case 'removemarketdata':
             let updatedmarketdata = newState.marketdata.filter(item => item.data.eventId !== action.id);
             let updatedoutcomedata = newState.outcomedata.filter(item => item.data.eventId !== action.id);
             return {...newState, marketdata : updatedmarketdata, outcomedata : updatedoutcomedata}
-            break;
         case 'showevent':
             let neweventdata = [];
             neweventdata.push(action.data)
             return {...newState, eventdata : neweventdata};
-            break;
         case 'showondemandmdata':
             return {...newState, ondemandmarketdata : action.data}
-            break;
         case 'reset':
-            return {...newState, marketdata: [], outcomedata : [], eventdata : [], ondemandmarketdata : []}
-            break;
+            return {...newState, marketdata: [], outcomedata : [], eventdata : [], ondemandmarketdata : [], marketTypes : []}
         case 'showsubsriptions':
             return {...newState, subscriptions : action.data}
-            break;
         case 'update_outcomeprice':
             if (newState.outcomedata.length) {
                 let newOutcomedata = newState.outcomedata.map(outcome => {
@@ -122,7 +112,6 @@ const LiveEvents = (state = initialState, action) => {
                 return {...newState, outcomedata:newOutcomedata}
             }
             return {...newState}
-            break;
         case 'update_marketstatus':
             if (newState.marketdata.length) {
                 let newMarketdata = newState.marketdata.map(market => {
@@ -134,7 +123,6 @@ const LiveEvents = (state = initialState, action) => {
                 return {...newState, marketdata:newMarketdata}
             }
             return {...newState}
-            break;
         case 'update_outcomestatus':
             if (newState.outcomedata.length) {
                 let newOutcomedata = newState.outcomedata.map(outcome => {
@@ -146,26 +134,31 @@ const LiveEvents = (state = initialState, action) => {
                 return {...newState, outcomedata:newOutcomedata}
             }
             return {...newState}
-            break;
         case 'betslip':
             /*let bsoutcome = newState.outcomedata.filter(item => item.data.outcomeId === action.payload.id);
             let bsmarket = newState.marketdata.filter(item => item.data.marketId === bsoutcome[0].data.marketId);
             let bsevent = newState.livedata[0][TYPE_NAME][action.payload.typename].filter(item => item.eventId === bsmarket[0].data.eventId);
             let betslipdata = [];
             */
-           debugger;
             let newbetslipdata = [...newState.betslipdata];
             (newbetslipdata.indexOf(action.payload.id) === -1)?newbetslipdata.push(action.payload.id):newbetslipdata.splice(newbetslipdata.indexOf(action.payload.id), 1);
     
             return {...newState, betslipdata : newbetslipdata}
+        case 'mkttypes':
+            let newmarketdata = [...newState.marketdata];
+            let findMarket = newmarketdata.reduce((all, item) => {
+                if( item.data.type === action.payload.typ ) {
+                    all.push(item.data.marketId)
+                }
+                return all;
+            }, []);
+            return {...newState, marketTypes : findMarket };
         case types.ADD_USER:
             // newState.users.push(action.user)
             return newState
-            break;
         case types.LIVE_EVENTS_DATA:
             newState.users.push('Iam  a LIVE DATA')
             return newState;
-            break;
         
         default: 
             return newState;

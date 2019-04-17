@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 import HomeComp from '../components/Home';
-import { addUser, showlivedata, showPrimaryMarket, showEventDetails, resetdata } from '../store/actions';
-import socket from '../sockets';
+import { showlivedata, showPrimaryMarket, showEventDetails, resetdata } from '../store/actions';
 
 const mapStateToProps = (state) => {
     return {
         dummy : state.rL.dummy,
         livedata : state.rL.livedata,
         marketdata : state.rL.marketdata,
-        outcomedata : state.rL.outcomedata
+        outcomedata : state.rL.outcomedata,
+        marketTypes : state.rL.marketTypes
     }
 }
 

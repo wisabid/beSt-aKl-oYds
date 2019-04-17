@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import soccer from '../../assets/images/Soccerball.svg';
 import { InputEl, ButtonEl } from '../FormElement';
 import UserContext from '../../context/UserContext';
 import Home from '../../containers/Home';
 import Counter from '../../containers/Counter'
+import ErrorBoundary from '../ErrorBoundary';
+import soccer from '../../assets/images/Soccerball.svg';
 
 const Login = () => {
     useEffect(() => {
-        console.log('CDM_', 'Login Component')
     }, [])
     //const { username, setuser } = useContext(UserContext)
             return (
@@ -30,7 +30,8 @@ const Login = () => {
                                     <ButtonEl elvalue="Go" eltype="submit"/>
                                 </form>
                             </div>
-                            :<Home />
+                            :<ErrorBoundary><Home /></ErrorBoundary>
+
                         }
                         
                     </div> 

@@ -1,36 +1,29 @@
-import React from 'react';
 import _ from 'lodash';
 
 const displayGate = (props) => {
     
     let newprops = {...props}
-    console.log('FROM HOC : ', newprops)
-    const { mdata = [], pmarket, edata = [], odata = [], marketdata = [] } = newprops;
+    const { mdata = [], marketdata = [] } = newprops;
 
      if (marketdata.length) { // For Detail market data
-        console.log('MARKET_DATA', JSON.stringify(marketdata));
         let new_marketdata = [];
         marketdata.map(item => {
             new_marketdata.push(item.data)
             return item;
         });
         let sorted_marketdata = _.orderBy(new_marketdata, ['displayOrder'], 'asc');
-        console.log('jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj')
-        console.table(sorted_marketdata, ['displayOrder']);
         let updated_marketdata = sorted_marketdata.filter(market => market.status.displayable === true);
         
         return {...newprops, marketdata : updated_marketdata}        
     }
 
     if (mdata.length) { // for Primary Market data & Detail market data
-        console.log('MARKET_DATA', JSON.stringify(mdata));
         let new_mdata = [];
         mdata.map(item => {
             new_mdata.push(item.data)
             return item;
         });
         let sorted_mdata = _.orderBy(new_mdata, ['displayOrder'], 'asc');
-        console.table(sorted_mdata, ['displayOrder']);
         let updated_mdata = sorted_mdata.filter(market => market.status.displayable === true);
         
         return {...newprops, mdata : updated_mdata}        

@@ -6,13 +6,12 @@ import soccer from '../../assets/images/Soccerball.svg';
 const Detail = (props) => {
     const { eventdata } = props;
     useEffect(() => {
-        console.log('R E A C T    H O O K S');
     }, []);
 
     if (eventdata.length) {
         return (
             <>
-                <h4 onClick={props.goback} className="backbtn"> Back </h4>
+                <button onClick={props.goback} className="backbtn"> Back </button>
                 <div className="bao-live detailScreen">
                 <fieldset className="outerf">
                     <legend>Event Detail</legend>

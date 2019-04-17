@@ -16,7 +16,8 @@ const mapdispatchToProps = (dispatch) => {
         showMarketOndemand : (id) => dispatch(showMarketOndemand([id])),
         showMarketOndemandAlt : (id) => dispatch(showMarketOndemandAlt([id])),
         showOutcomOndemand : (id) => dispatch(outcomeOnDemand([id], true)),
-        showmarkets : (payload) => dispatch(showPrimaryMarket(payload))
+        showmarkets : (payload) => dispatch(showPrimaryMarket(payload)),
+        showmTypes: (typ, evnt) => dispatch({type: 'mkttypes', payload : {typ: typ, evnt: evnt} })
     }
 }
 

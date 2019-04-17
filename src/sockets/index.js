@@ -1,4 +1,3 @@
-import * as types from '../store/constants/ActionTypes';
 import { showOutcomes, showPrimaryMarket} from '../store/actions';
 import { WS_URL } from '../store/constants/constants'
 
@@ -6,12 +5,9 @@ const setupSocket = (dispatch, username) => {
     const socket = new WebSocket(WS_URL);
     socket.onopen = () => {
         console.log('Connection is open my boy!', socket);
-        //socket.send(JSON.stringify(showlivedata()))
     }
-    socket.onmessage = (event) => {
-       
-        console.log('YOU HAVE A MESSAGE MY BOY ');
-        
+    socket.onmessage = (event) => {       
+        console.log('YOU HAVE A MESSAGE MY BOY ');        
         let data = JSON.parse(event.data);
         console.table('MESSAGE_RECEIVED', data);
         switch(data.type) {

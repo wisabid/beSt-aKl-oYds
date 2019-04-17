@@ -5,8 +5,6 @@ const translate = (props) => {
     // static contextType = UserContext;
     
     let newprops = {...props};
-    console.log('MY ALFIEEEEEEEEEEEEE', newprops)
-   
     return newprops;
 }
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import UserContext from '../../context/UserContext';
 import Event from '../../containers/Event';
 import soccer from '../../assets/images/Soccerball.svg';
+import MarketTypes from '../../containers/MarketTypes';
 const Detail = lazy(() => import('../../containers/Detail'))
 
 class Home extends Component {
@@ -14,10 +15,12 @@ class Home extends Component {
     };
 
     handleBack = () => {
+        debugger;
         this.props.resetData();
         this.setState({
             showdetail : false,
-            showpmlist : []
+            showpmlist : [],
+            marketTypes : []
         })
     }
 
@@ -51,18 +54,18 @@ class Home extends Component {
     loadingComp = () => (<img src={soccer} className="bao-spinner" alt="logo" />);
 
     componentDidUpdate() {
-        console.log('HOME_COMP DId update', this.props);        
     }
 
           
     render() {
-        console.log('HOME_Com Render method')
         const { showdetail, showpmlist } = this.state;
-        const { username } = this.context;
         // const { livedata } = this.props;
-        debugger
-        console.log('HOME_Com Livedata')
-        if (showdetail) {
+        if (this.props.marketTypes.length) {
+            return (
+                <MarketTypes dta={[this.props.marketTypes]} goback={this.handleBack}/>
+            )
+        }
+        else if (showdetail) {
             return (
                 <Suspense fallback={this.loadingComp()}>
                     <Detail                     
@@ -94,7 +97,6 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        console.log('HOME_CDM', this.props.livedata);
         // this.setState({
         //     livedata : this.props.livedata
         // })

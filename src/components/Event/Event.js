@@ -3,17 +3,16 @@ import soccer from '../../assets/images/Soccerball.svg';
 import EventDetails from './EventDetails';
 import PropTypes from 'prop-types';
 
-function eventReducer(state, action) {
-    return state;
-}
+
 
 const Event = (props) => {
     const { edata } = props;
     
     if (edata.length) {
+        let keyid = Date.now();
         return (
-            <fieldset className="outerf bao-football-live" style={{border:"none"}}>
-                    <ul className="noborder">
+            <fieldset key={`fs_${keyid}`} className="outerf bao-football-live" style={{border:"none"}} >
+                    <ul className="noborder" key={`ul_${keyid}`}>
                       <EventDetails {...props} />                               
                     </ul>
             </fieldset>

@@ -41,7 +41,6 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    console.log('CDM_', 'App Component')
   }
 
   render() {
