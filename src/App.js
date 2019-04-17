@@ -9,7 +9,7 @@ export class App extends Component {
   constructor() {
     super();
     this.state = {
-        username : 'Alfie',
+        username : '',
         odssunit : constants.ODDS_DECIMAL
     } 
   }
